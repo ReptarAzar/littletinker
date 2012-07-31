@@ -1,0 +1,29 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Co-Founder: Isaac Budmen
+  Site: http://TeamBudmen.com
+  Twitter: @ibudmen
+  Location: Galactic Sector ZZ9 Plural Z Alpha
+
+  Co-Founder: Christopher "Reptar" Azar
+  Site: http://ChristopherAzar.com
+  Twitter: @ReptarAzar
+  Location: The Deep Woods
+
+  Software Engineer & Resident Hipster: Chris Becker
+  Site: http://ChrisBecker.info
+  Twitter: @Cbeck527
+  Location: Shoreditch Tribecca, SoHo, Urban Outfitters
+
+/* THANKS */
+  To Monorail Cat, for reminding us to be awesome every once and awhile 
+  To Max Miedinger for Helvetica
+   
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: Twitter Bootstrap, JQuery

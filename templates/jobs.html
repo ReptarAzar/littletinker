@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block main %}
+      <div class="row-fluid">
+		<div class="span12 intro">
+         <div id="heading" class="trade-bold-2"><h1>We are scaling our team.</h1></div>
+            <p class="about">We want to delight more people, more often in more places. To do that we are making a few additions to round out of team, read below to see if you fit any of the job descriptions, if you have a pedigree in awesomeness and share our passion for building then we would love to talk to you.</p>
+        </div>
+        <div class="span12">
+			<div class="accordion" id="jobs">
+	            <div class="accordion-group">
+	              <div class="accordion-heading">
+	                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">PCB Designer</a>
+	              </div>
+	              <div id="collapseOne" class="accordion-body collapse in">
+	                <div class="accordion-inner">
+	                 <img src="{{ STATIC_URL }}img/jobs/PCBdesigner.png" width="80%" alt="PCB Designer">
+					<p>
+						<ul>
+							<li>Do images of conductive pathways dancing in your head keep you up at night?</li>
+							<li>Are schematics what make you ecstatic?</li>
+						</ul>	
+						We are looking for an awesome printed circuit board designer who believes that the inside of electronics need to be just as beautiful as the outside.</p>
+	               </div>
+	              </div>
+	            
+	              <div class="accordion-heading">
+	                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Futurist Copy Editor</a>
+	              </div>
+	              <div id="collapseTwo" class="accordion-body collapse">
+	                <div class="accordion-inner">
+	               <img src="{{ STATIC_URL }}img/jobs/copyeditor.png" width="80%" alt="Futurist Copy Editor">
+				     <p>
+							<ul>
+								<li>Do you believe the singularity is just around the corner?</li>
+								<li>Are the five Cs (clear, correct, concise, complete and consistent) your life's ten commandments?</li>
+							</ul>	
+							If you are someone who loves proper grammar as much as you love H.G. Wells and lightsabers then we want to talk to you!</p>
+	 			  </div>
+	             </div>
+	            
+				 <div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Business Guy</a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+              		<img src="{{ STATIC_URL }}img/jobs/businessguy.png" width="80%" alt="businessguy">
+<p>Conventional pass-throughs, positive convexity, negative amortization, depository institutions deregulation, and the preferred habitat theory. If that didn't sound like the worst load of gibberish ever and the idea of extraneous meetings makes you sick. Reach out because Little Tinker has administrative needs that need tending too.</p>
+                </div>
+              </div>
+	              <div class="accordion-heading">
+	                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour"> ABS Artist</a>
+	              </div>
+	              <div id="collapseFour" class="accordion-body collapse">
+	                <div class="accordion-inner">
+						<img src="{{ STATIC_URL }}img/jobs/absartist.png" width="80%" alt="ABS Artist">
+						 <p>
+								<ul>
+									<li>Is your idea of an ideal world one filled with spools thermoplastic filament?</li>
+									<li>Do you have more 3D printed nicknacks then Justin Bieber has followers?</li>
+								</ul>	
+								If 3D printing is your bread and butter and the idea of delighting the masses by making the absurd applicable gets your jollies going get in touch!
+								</p>
+	                </div>
+	              </div>
+	            </div>
+	          </div>   
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}About Little Tinker{% endblock %}
+
+{% block main %}
+      <div class="row-fluid">
+		<div class="span12 intro">
+         <div id="heading" class="trade-bold-2"></div>
+            
+              <ul class="about span4 pull-left">
+                <li>We tell our creative friends we are engineers. </li>
+                <li>We tell our developer friends we are artists.</li>
+                <li class="last">And we tell our parents not to worry.</li>
+                </ul>
+              <p class="span6 pull-right"> <br>At Little Tinker we build meaningful experiences and bring these stories to life with intelligent electronics that interact with online events. Our products, strive to reach one goal create a meaningful and magical experience for our audience that gives them a story to share.</p> 
+        </div>
+        <div class="span12 hero-head">
+            <h3 id="sweet-shit">The Team</h3>
+            <h4 class="we-heart-u"> <a href="http://makesweetshit.com/tagged/sweet-shit">we <i class="icon-heart icon-white"></i> you.</a></h4>
+        </div>
+
+        <div id="projects" class="span12 row-fluid team">                      
+        <div class="span4">
+            <img src="{{ STATIC_URL }}img/team/isaac.png" width="90%" alt="Isaac"></a>
+            <h2>Isaac Budmen <span><a href="http://twitter.com/ibudmen" target="_blank">@iBudmen</a></span></h2>
+            <p>Co-founder, CEO</p>
+            <p> </p>
+        </div>
+            <div class="span4">
+            <img src="{{ STATIC_URL }}img/team/reptar.png" width="90%" alt="Isaac"></a>
+            <h2>Christopher Azar <span><a href="http://twitter.com/ReptarAzar" target="_blank">@ReptarAzar</a></span></h2>
+            <p>Co-founder, Designer &amp; Developer</p>
+            <p> </p>
+        </div>
+
+      <div class="span4">
+          <img src="{{ STATIC_URL }}img/team/becker.png" width="90%" alt="Isaac"></a>
+          <h2>Chris Becker <span><a href="http://twitter.com/Cbeck527" target="_blank">@Cbeck527</a></span></h2>
+          <p>Software Engineer</p>
+          <p> </p>
+      </div>
+           
+          
+            </div><!--/span-->
+          </div><!--/row-->
+{% endblock %}

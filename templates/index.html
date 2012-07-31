@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% block title %}Little Tinker{% endblock %}
+
+{% block head %}
+    <script type="text/javascript">
+    function tumblr(resp) {
+      var posts = resp.posts;
+      $('#blog .loading').replaceWith('<ul/>');
+      $ul = $('#blog ul');
+      for (var i=0; i<posts.length; i++) {
+        var p = posts[i];
+                    var title = p['regular-title'] || p['link-text'] || null, body = p['regular-body'] || null;
+        if (title) {
+          $ul.append('<h3><a href="'+p['url']+'">'+title+'</a></h3>');
+          $ul.append('<p>'+body+'</p>');
+        }
+      }
+    }
+    </script>
+{% endblock %}
+
+{% block main %}
+      <div class="row-fluid">
+		<div class="span12 intro">
+	    <img class="bro" src="{{ STATIC_URL }}img/main.png" alt="homies">
+         <div id="heading" class="trade-bold-2 docuready top-row">
+
+
+          <h1 class="TisaOT-Bold">We scale <span></span> experiences.</h1>
+         </div>
+            <p class="subhead docuready">We love sharing ideas and good times with our friends on the internets, but social networks on a glowing screen feel sterile, impersonal, and devoid of humanity. </p>
+<p class="subhead docuready"><span>the idea:</span> Let’s get away from interfacing with screens and bring technology back into the tangible world. We take existing social media platforms, add some magic*, and make them more delightful.</p>
+            <p><a href="/about" id="learnmore" class="btn btn-inverse btn-medium docuready">Learn More &raquo;</a></p>
+        </div>
+        <div class="span12 hero-head">
+            <h3 id="sweet-shit">Recent Projects</h3>
+            <h4> <a href="http://makesweetshit.com/tagged/sweet-shit">we <i class="icon-heart icon-white"></i> making things.</a></h4>
+        </div>
+
+        <div id="projects" class="span12 row-fluid">   
+        <!-- PROJECT BEGIN -->
+        <div class="span4">
+                        
+                        <a href="http://DrinkUpGame.com" target="_blank"><img src="{{ STATIC_URL }}img/drinkup.png" width="90%" alt="Drinkup"></a>
+                        <h2><a href="http://DrinkUpGame.com" target="_blank">#DrinkUp</a></h2>
+                        <p>Twitter powered drinking game <!-- <br /> <a href="http://DrinkUpGame.com" target="_blank">DrinkUpGame.com</a> --></p>
+        </div>
+        <!-- PROJECT END -->
+        <!-- PROJECT BEGIN -->
+          <div class="span4">
+                          <a href="http://youtu.be/vryqxVCJESQ" target="_blank" title="Prototype Video"><img src="{{ STATIC_URL }}img/rocket.png" width="90%" alt="Rocket"></a>
+                          <h2><a href="http://youtu.be/vryqxVCJESQ" target="_blank" title="Prototype Video">Foursquare Gum Ball Machine</a></h2>
+                          <p>Check in and enjoy a spherical confection </p>
+          </div>
+        <!-- PROJECT END -->   
+        <!-- PROJECT BEGIN -->
+          <div class="span4"><img src="{{ STATIC_URL }}img/twitter-washer.png" width="90%" alt="Twitter Washer">
+                          <h2>Tweeting Washer</h2>
+                          <p>@TheWasher: Your clothes are clean!  </p>
+          </div>
+        <!-- PROJECT END -->               
+          </div>
+
+ 
+          
+          <div class="row-fluid">
+            <div class="span7">
+              <div id="blog">
+               <h4>RECENT SWEET SHIT</h4>
+                  <span class="loading">Tinkering with Tumblr API...</span>
+              </div>
+               <p><a class="btn" href="http://MakeSweetShit.com"><img src="{{ STATIC_URL }}img/ico/tumblr.png" width="16" height="16" alt="Tumblr"> Read More &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4 tweets">
+              <h4><a href="http://youtu.be/iKmnxzleOqA" target="_blank">Tweet me maybe?</a></h4>
+                <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+                <script>
+                new TWTR.Widget({
+                  version: 2,
+                  type: 'profile',
+                  rpp: 3,
+                  interval: 30000,
+                  width: 'auto',
+                  height: 'auto',
+                  theme: {
+                    shell: {
+                      background: 'rgba(255, 255, 255, 0)',
+                      color: 'rgba(0, 0, 0, .8)'
+                    },
+                    tweets: {
+                      background: 'rgba(255, 255, 255, 0)',
+                      color: '#333333',
+                      links: '#000000'
+                    }
+                  },
+                  features: {
+                    scrollbar: true,
+                    loop: false,
+                    live: true,
+                    behavior: 'all'
+                  }
+                }).render().setUser('LittleTinkerCo').start();
+                </script>
+
+              <p><a href="https://twitter.com/LittleTinkerCo" class="twitter-follow-button btn" data-show-count="false" data-lang="en" data-size="large"></a>
+                  <a href="https://twitter.com/intent/tweet?screen_name=LittleTinkerCo" class="twitter-mention-button" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a>
+                  
+                  
+                  </p>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+              
+              
+              
+
+
+            </div><!--/span-->
+          </div><!--/row-->
+
+      
+      <div class="row-fluid span11 featured-on">        
+           <h4 class="as-seen-on-heading" >These Guys Like us</h4> 
+           </div>
+               <div class="row-fluid as-seen-on">
+                 <div class="span3">
+                     <a href="http://thenextweb.com/shareables/2012/02/09/check-out-this-drinking-game-for-twitter-its-called-drinkup/" title="The Next Web '#DrinkUp, A Twitter Drinking Game'" target="_blank"><img src="{{ STATIC_URL }}img/tnw.png" width="65%" alt="The Next Web" target="_blank"></a>
+                     </div><!--/span-->
+                 <div class="span3">
+                     <a href="http://www.metro.us/boston/local/article/1093271--drinkup-a-new-twitter-drinking-game" target="_blank" title="Metro Boston '#DrinkUp, A Twitter Drinking Game'"><img src="{{ STATIC_URL }}img/metro.png" width="65%" alt="Metro"></a>
+                     <!-- <h3>Metro Boston</h3> -->
+                   </div><!--/span-->
+                 <div class="span3">
+                     <a href="http://aboutfoursquare.com/gumball-machine-powered-by-foursquare-check-ins/" target="_blank" title="About Foursquare: Gumball machine powered by foursquare check-ins"><img src="{{ STATIC_URL }}img/about4sq.png" width="65%" alt="About Foursquare"></a>
+                     
+                     </div><!--/span-->
+                 <div class="span3">
+                      <a href="http://www.dailyorange.com/feature/the-standouts/the-tinker-isaac-budmen-1.2864346#.T59UW8RYtcs" target="_blank" title="The Daily Orange 'The tinkerer: Isaac Budmen'"><img src="{{ STATIC_URL }}img/do.png" width="85%" alt="The Daily Orange"></a>
+                   </div><!--/span-->
+               </div><!--/row-->          
+             </div><!--/span-->
+    {% endblock %}

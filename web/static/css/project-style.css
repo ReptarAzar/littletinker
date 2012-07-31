@@ -1,0 +1,253 @@
+
+
+.copy h2 {
+  clear: both;
+}
+
+a img {
+  border: none;
+}
+
+
+ul, ol { padding-left: 1.3em;}
+
+.hidden { display: none; }
+
+.copy {
+  width: 600px;
+  line-height: 1.55em;
+}
+
+blockquote {
+	margin: 0;
+	font: italic 18px Georgia, serif;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+dd + dt {
+  margin-top: 0.5em;
+}
+
+dd {
+  margin-left: 1.0em;
+}
+
+button {
+  -webkit-appearance: push-button;
+}
+
+#site-footer {
+  clear: both;
+  margin: 20px 0px;
+  border-top: 2px solid white;
+  padding-top: 10px;
+  line-height: 30px;
+  font-size: 95%;
+  font-style: italic;
+}
+
+.license-copy {
+  font-size: 85%;
+}
+
+.demos #copy,
+.docs #content {
+  max-width: 640px;
+}
+
+.docs #content h2 {
+  border-top: 2px solid #FFF;
+  padding-top: 10px;
+}
+
+.docs #content h2:target { 
+  background: #D26;
+  color: white;
+  padding: 10px 5px 5px;
+}
+
+/**** Docs ****/
+
+
+
+.options dl dt { font-weight: normal; }
+
+.options dl dt,
+.options dl dd {
+  float: left;
+  padding: 0 1.2em;;
+  background: #161616;
+  line-height: 32px;
+  height: 32px;
+  margin: 0;
+}
+
+.options dl.header dt,
+.options dl.header dd {
+  background: #444;
+}
+
+.options dl .option-type {
+  font-size: 13px;
+  color: #AAA;
+  font-style: italic;
+}
+
+.options dl dd {
+  margin-left: 1px;
+}
+
+/**** Demos ****/
+
+#container {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.centered { margin: 0 auto; }
+
+.box {
+  margin: 5px;
+  padding: 0;
+  /*background: rgba(255, 255, 255, 0.75);*/
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.box h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+.box p {
+  border-top: 2px solid #eee;
+}
+
+.box img,
+#tumblelog img {
+  display: block;
+  width: 100%;
+}
+
+.rtl .box {
+  float: right;
+  text-align: right; 
+  direction: rtl;
+}
+
+
+
+.col1 { width: 90px; }
+.col2 { width: 190px; }
+.col3 { width: 290px; }
+.col4 { width: 390px; }
+.col5 { width: 490px; }
+
+.col1 img { max-width: 90px; }
+.col2 img { max-width: 190px; }
+.col3 img { max-width: 290px; }
+.col4 img { max-width: 390px; }
+.col5 img { max-width: 490px; }
+
+.col2 {
+  background: rgba(255, 255, 255, 0.65);  
+}
+
+
+.col4 {
+  background: rgba(255, 255, 255, 0.85);  
+}
+
+.box:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+
+.box .col4 img {
+  width:390;
+  height:260;
+}
+
+.box .col2 img {
+  width:190;
+  height:126;  
+}
+
+.box img:hover {
+  opacity: .95;
+}
+
+.box p {
+  padding: 10px 10px 5px;
+}
+.box i {
+  float:right;
+  margin-top:3px;
+  opacity:.5;
+}
+.box i:hover {
+ opacity:.8; 
+} 
+
+div#container.masonry {
+  min-width:390px !important;
+}
+
+/**** Gutters ****/
+
+.has-gutters .box {
+  margin: 5px 0;
+}
+
+.has-gutters .col1 { width: 90px; }
+.has-gutters .col2 { width: 230px; }
+.has-gutters .col3 { width: 370px; }
+.has-gutters .col4 { width: 550px; }
+
+/**** Transitions ****/
+
+.transitions-enabled.masonry,
+.transitions-enabled.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.transitions-enabled.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.transitions-enabled.masonry  .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+
+/* disable transitions on container */
+.transitions-enabled.infinite-scroll.masonry {
+  -webkit-transition-property: none;
+     -moz-transition-property: none;
+       -o-transition-property: none;
+          transition-property: none;
+}
+
+

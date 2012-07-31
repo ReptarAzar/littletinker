@@ -1,0 +1,594 @@
+@import url('boilerstrap.css');
+
+
+/* Primary Styles ======================================================================================================
+== Author:Christopher Azar=============================================================================================*/
+body {
+  padding-top: 125px;
+  padding-bottom: 40px;
+  background: #f6f6f6 url(../img/bg.png) repeat;
+}
+.sidebar-nav {
+  padding: 9px 0;
+}
+div.intro {
+  margin-left: 2.564103% !important;
+}
+div.intro h1 {
+  font-size: 3.5em;
+  margin: 20px 0;
+  line-height: 1em;
+}
+.brand img {
+  top: 5px;
+  position: relative;
+  float: left;
+}
+.brand img.hardhat {
+  margin-left: 10px;
+}
+.hero-head {
+  background-color: #2a2a2a;
+  color: #eee;
+  text-shadow: 1px inset #fff;
+  margin: 20px 0 0 0;
+  text-transform: uppercase;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.hero-head h3 {
+  padding: 13px 20px 9px;
+  font-size: 1.55em;
+  letter-spacing: 1px;
+  width: 40%;
+  float: left;
+  font-family: 'TradeGothic-Bold';
+}
+.hero-head h4 a {
+  padding: 16px 15px;
+  font-size: 1.15em;
+  letter-spacing: 0;
+  width: 180px;
+  float: right;
+  color: rgba(255, 255, 255, 0.2);
+}
+.hero-head h4 a:hover {
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  text-decoration: none;
+}
+.project {
+  width: 30%;
+  float: left;
+}
+.as-seen-on .span2 img,
+.as-seen-on .span3 img {
+  opacity: .5;
+  -moz-transition-property: all;
+  -moz-transition-duration: .4s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .4s;
+  -o-transition-property: all;
+  -o-transition-duration: .4s;
+  -ms-transition-property: all;
+  -ms-transition-duration: .4s;
+  transition-property: all;
+  transition-duration: .4s;
+}
+.as-seen-on .span2 img:hover,
+.as-seen-on .span3 img:hover {
+  opacity: 1;
+}
+.as-seen-on {
+  margin: 20px 0;
+}
+h4.as-seen-on-heading {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .85em;
+  margin-top: 25px;
+}
+div.intro img.bro {
+  width: 375px;
+  float: right;
+  margin-right: 0;
+  bottom: -30px;
+  position: relative;
+  right: 1%;
+  z-index: -5;
+  clear: none;
+}
+img.bro  {
+  /* for firefox, safari, chrome, etc. */
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+
+
+.span11 .featured-on {
+  margin-left: 50px;
+}
+p.subhead span {
+  width: 100%;
+  font-size: 1.15em;
+  line-height: 1.5;
+  font-family: 'TisaOT-Bold';
+}
+ul.about li{
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-family: 'TisaOT-Bold';
+  list-style-type: none;
+}
+ul.about li.last {
+  font-family:'TisaOT-BoldIta',Serif;;
+}
+p.subhead {
+  width: 57%;
+  font-size: 1.4em;
+  line-height: 1.5;
+font-family: 'TisaOT';
+margin-bottom: 15px;
+}
+p.about {
+  font-size: 1.4em;
+  line-height: 1.5;
+  font-family: 'TradeGothic-Light';
+}
+a.inactive {
+  color: rgba(255, 255, 255, 0.25) !important;
+}
+.span7 h4,
+.span4 h4 {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: .85em;
+  letter-spacing: 1px;
+}
+.span7 h2 {
+  padding-bottom: 10px;
+}
+
+h2 span a {
+  color: #bbb !important;
+  font-size: .7em;
+  width: 100%;
+  float: left;
+  top:-10px;
+  position: relative;
+
+}
+
+/* Twitter Widget */
+.twtr-scroll .twtr-timeline {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 300px !important;
+}
+.twtr-widget {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.twtr-ft {
+  display: none!important;
+}
+#twtr-widget-1 .twtr-bd,
+#twtr-widget-1 .twtr-timeline i a,
+#twtr-widget-1 .twtr-bd p {
+  color: #828282 !important;
+  line-height: 18px !important;
+}
+.twtr-user,
+#twtr-widget-1 h3,
+.twtr-hd {
+  display: none !important;
+}
+#twtr-widget-1 .twtr-tweet-text {
+  margin-bottom: 10px !important;
+}
+#twtr-widget-1 .twtr-doc,
+#twtr-widget-1 .twtr-hd a,
+#twtr-widget-1,
+#twtr-widget-1 h4 {
+  text-transform: none;
+}
+.twtr-widget em a,
+.twtr-widget .twtr-new-results a {
+  font-size: 9px;
+  font-style: normal;
+  margin-top: 2px;
+  zoom: 1;
+  color: #999 !important;
+}
+.twtr-timestamp {
+  color: #222 !important;
+}
+.html5-badge {
+  width: 80px;
+  top: -30px;
+  position: relative;
+}
+#projects img {
+  max-width: 510px;
+}
+#mti_wfs_colophon {
+  right: -999999px !important;
+}
+iframe {
+  margin-top: 5px;
+}
+footer {
+  line-height: 2em;
+  font-family: "TisaOT-Bold", sans-serif;
+}
+footer a {
+  margin-right: 5px;
+  margin-bottom: 25px;
+}
+footer img {
+  margin: -3px -3px 0 8px;
+}
+footer span {
+  color: #ddd;
+  line-height: 2.5em;
+}
+a.btn img {
+  position: relative;
+  top: -2px;
+  margin-right: 3px;
+}
+.mono-cat {
+  background-image: url(../img/mono-cat.gif);
+}
+.team h2 {
+  margin-top: 10px;
+}
+.hero-head h4.we-heart-u a {
+  padding: 16px 15px;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  width: 80px;
+  float: right;
+  color: rgba(255, 255, 255, 0.2);
+}
+#jobs {
+  background: #fff;
+}
+#jobs img {
+  width: 800px;
+  margin: 0 auto;
+}
+#blog h3 {
+  font-family: 'TisaOT-Bold';
+}
+#blog ol li {
+  margin-left: 20px;
+  font-style: italic;
+}
+#blog ol {
+  margin-bottom: 20px;
+}
+
+/* Project Page Styles */
+.projects-hero-img img{
+  border: 5px solid #faf04f;
+  width: 100%;
+  position: relative;
+  z-index:-5;
+
+
+}
+#corner {
+  width: 0;
+  height: 0;
+  border-top: 25px solid #faf04f; 
+  border-right: 25px solid transparent;
+  margin-bottom:-30px;
+  z-index:5;
+}
+#btm-corner {
+  float: right;
+  width: 0;
+  height: 0;
+  border-right: 25px solid #faf04f; 
+  border-top: 25px solid transparent;
+  margin-top:-30px;
+  margin-right:-10px;
+  z-index:5;
+}
+
+.projects-top-corner {
+  position: relative;
+  top: 40px;
+  float: left;
+}
+
+.project-images {
+  margin-bottom: 20px;
+}
+
+#project-sidebar h3, #project-sidebar h3 a {
+  font-family: TisaOT-Bold, sans-serif;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+#project-sidebar h4 {
+  padding: 0; 
+}
+
+.project-date {
+  font-family: TisaOT-Bold, sans-serif;
+  text-transform: uppercase;
+}
+.project-date span {
+  font-family: TisaOT, sans-serif;
+  text-transform: none;
+}
+
+.project-paragraph p {
+  font: 1.2em/1.5em TisaOT, sans-serif;
+}
+#project-sidebar h3 {
+  font-size: 1.5em;
+}
+
+#project-sidebar img {
+  margin-left:0;
+  padding-left: 0;
+}
+#project-sidebar img:hover {
+  opacity:.9;
+  cursor:pointer;
+}
+
+#ytvideo,
+#ytvideo2 {
+  float: left;
+  margin-right:10px;
+  width:100%;
+  height: 400px;
+  overflow:hidden;
+  position: relative;
+  text-align: center;
+
+}
+#ytvideo2 img{
+
+}
+
+
+.yt_holder {
+    float: left;
+    margin-bottom:25px;
+    width: 100%;
+}
+
+
+.yt_holder ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.yt_holder ul li {
+    list-style-type: none;
+    display:block;
+    float: left;
+    margin-top: 20px;
+    width: 140px;
+}
+
+.yt_holder li img {
+    width: 120px;
+    height: 80px;
+    float: left;
+    padding: 5px;
+    background: #BBB;
+}
+
+.yt_holder ul li img:hover {
+  padding: 5px;
+  background: #848484;
+  cursor: pointer;
+}
+
+
+.yt_holder ul li.currentvideo img {
+    padding:0;
+    border: 5px solid #faf04f;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+ .yt_holder ul li.currentvideo img:hover {
+  padding:0;
+  border: 5px solid #faf04f;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+  
+
+/*contact page styles*/
+#contact textinput {
+  width: 98%;
+}
+#contact h3 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+a.tip {
+    text-decoration: none
+}
+a.tip:hover {
+    position: relative
+}
+a.tip span {
+    display: none
+
+}
+a.tip:hover span {
+/*    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 0 #ffffff;
+    -webkit-box-shadow: inset 0 1px 0 #ffffff;
+    -moz-box-shadow: inset 0 1px 0 #ffffff;*/
+    padding: 2px 20px 5px 5px;
+    background-color: #f5f5f5;
+    display: block;
+    z-index: 100;
+    left: -10px;
+    margin: -11px -10px -10px 100px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    text-decoration: none;
+    text-align: left;
+    border-radius:3px;
+    moz-border-radius:3px;
+    webkit-border-radius:3px;
+    color:#666;
+}
+
+a.tip img {
+  margin-right: 5px;
+}
+
+form {
+  font-family: 'TisaOT', sans-serif ;
+}
+
+a.tip.twit:hover span { margin: -11px -10px -10px 90px; }
+a.tip.fsq:hover span { margin: -11px -10px -10px 70px; }
+a.tip.fb:hover span { margin: -11px -10px -10px 50px; }
+a.tip.email:hover span { margin: -11px -10px -10px 30px; }
+
+/* End Contact Styles */
+
+/* About Page Styles */
+
+.switcher-content {
+  display: none;
+}
+
+div.haha p{
+  font-family: Comic Sans, Comic Sans MS, cursive;
+  font:  1.25em/1.5em Comic Sans, Comic Sans MS, cursive;
+}
+  
+
+/*Type Replacement
+Generated by FG */
+
+
+@font-face {
+  font-family: 'TradeGothic-Bold';
+  src: url('../type/TradeGothicLTStd-Bold.eot');
+  src: local('☺'), url('../type/TradeGothicLTStd-Bold.woff') format('woff'), url('../type/TradeGothicLTStd-Bold.ttf') format('truetype'), url('../type/TradeGothicLTStd-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TradeGothic-LightObl';
+  src: url('../type/TradeGothicLTStd-LightObl.eot');
+  src: local('☺'), url('../type/TradeGothicLTStd-LightObl.woff') format('woff'), url('../type/TradeGothicLTStd-LightObl.ttf') format('truetype'), url('../type/TradeGothicLTStd-LightObl.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothic-Light';
+  src: url('../type/TradeGothicLTStd-Light.eot');
+  src: local('☺'), url('../type/TradeGothicLTStd-Light.woff') format('woff'), url('../type/TradeGothicLTStd-Light.ttf') format('truetype'), url('../type/TradeGothicLTStd-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothic-Bd2';
+  src: url('../type/TradeGothicLTStd-Bd2.eot');
+  src: local('☺'), url('../type/TradeGothicLTStd-Bd2.woff') format('woff'), url('../type/TradeGothicLTStd-Bd2.ttf') format('truetype'), url('../type/TradeGothicLTStd-Bd2.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Trade Gothic® Bold */
+.trade-bold {
+  font-family:'TradeGothic-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Trade Gothic® Bold #2 */
+.trade-bold-2 {
+  font-family:'TradeGothic-Bd2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
+
+/* Trade Gothic® Condensed Bold #20 */
+.trade-cond-bold-20 {
+  font-family:'TradeGothic-Bd2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Trade Gothic® Light */
+.trade-light {
+  font-family:'TradeGothic-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
+
+/* Trade Gothic® Light Oblique */
+.trade-light-oblique {
+  font-family:'TradeGothic-LightObl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
+
+/** TISA OT - Generated by FG **/
+@font-face {
+  font-family: 'TisaOT';
+  src: url('../type/TisaOT.eot');
+  src: local('☺'), url('../type/TisaOT.woff') format('woff'), url('../type/TisaOT.ttf') format('truetype'), url('../typeTisaOT.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TisaOT-Bold';
+  src: url('../type/TisaOT-Bold.eot');
+  src: local('☺'), url('../type/TisaOT-Bold.woff') format('woff'), url('../type/TisaOT-Bold.ttf') format('truetype'), url('../type/TisaOT-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TisaOT-Ita';
+  src: url('../type/TisaOT-Ita.eot');
+  src: local('☺'), url('../type/TisaOT-Ita.woff') format('woff'), url('../type/TisaOT-Ita.ttf') format('truetype'), url('../type/TisaOT-Ita.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TisaOT-MediIta';
+  src: url('../type/TisaOT-MediIta.eot');
+  src: local('☺'), url('../type/TisaOT-MediIta.woff') format('woff'), url('../type/TisaOT-MediIta.ttf') format('truetype'), url('fonts/TisaOT-MediIta.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TisaOT-BoldIta';
+  src: url('../type/TisaOT-BoldIta.eot');
+  src: local('☺'), url('../type/TisaOT-BoldIta.woff') format('woff'), url('../type/TisaOT-BoldIta.ttf') format('truetype'), url('../type/TisaOT-BoldIta.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.TisaOT {font-family:'TisaOT',Serif;font-weight: normal;}
+.TisaOT-Bold {font-family:'TisaOT-Bold',Serif; font-weight: normal;}
+.TisaOT-Ita {font-family:'TisaOT-Ita',Serif;}
+.TisaOT-MediIta {font-family:'TisaOT-MediIta',Serif;font-weight: normal;}
+.TisaOT-BoldIta {font-family:'TisaOT-BoldIta',Serif;font-weight: normal;}
+
+
+
+
+

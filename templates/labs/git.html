@@ -1,0 +1,103 @@
+{% extends 'labs/projectbase.html' %}
+
+{% block main %}
+    <div class="row-fluid">
+		<div class="span12 intro">
+<h1>Git <span style="color:#bbb;">(for agile dev teams)</span> </h1> 
+<h2>Create new projects with Git and your MacMini Server</h2> 
+This tutorial has two very specific use cases. For more general info about Git, check out <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" 
+target="_blank" title="No joke, it's magic." class="underline">Stanford's guide to Git magic</a>. This tutorial is for people looking to create a live dev/staging environment to their development workflow while harnessing the versioning and magic of Git. The advantages of working locally and pushing to a designated 'staging' site include 1- peace of mind (at any one time the site is on three different drives in different places -- locally, the Mac Mini, and Github.com) 2- the ability to see your code live and in the wild before you publish it to the public 3- we get things done faster when we can work together. <strong>Note: Code in CAPS is varible project-to-project. </strong>
+
+<br /><br />
+<hr>
+
+<br />
+<br />
+<h2>Starting a new project</h2>
+<br />
+Go to <a href="http://github.com/LittleTinker" target="_blank" title="Github" class="underline">github.com/littletinker</a> and create a new repo. <br>
+In <a href="http://en.wikipedia.org/wiki/Terminal_(OS_X)" target="_blank" title="Terminal on Wikipedia" class="underline">Terminal</a> change directory (aka "cd") to the local folder where you want the project to live locally on your machine.
+<pre>
+cd Sites/
+mkdir REPO_NAME
+cd REPO_NAME</pre>
+Clone the repo you just made on Github.com to your local machine.
+<pre>
+git clone https://github.com/LittleTinker/REPO_NAME.git
+cd .git/hooks/
+touch post-recieve
+vim post-recieve
+</pre>
+To set permissions for git to read/write to the MacMini server insert the following the path to your own volume
+<pre>
+#!/bin/sh
+GIT_WORK_TREE=/Volumes/Macintosh\ HD2/Websites/dev.littletinker.co/REPO_NAME/ git checkout -f
+</pre>
+<br>
+In a <em>new terminal window</em> SSH into Mac Mini
+<pre>SSH azar/chris/isaac@minitinker.littletinker.co</pre>
+cd to the git directory that will hold all git files on the Mac Mini
+<pre>
+cd /Volumes/Documents
+mkdir git
+cd git
+mkdir REPO_NAME.git
+cd REPO_NAME.git
+</pre>
+Create a bare repo in your new folder "REPO_NAME.git"
+<pre>
+git init --bare
+</pre>
+Go back to your other Terminal window and add a remote called "dev" 
+<pre>git remote add dev ssh://minitinker.littletinker.co://Volumes/Macintosh\ HD2/Documents/git/REPO_NAME.git</pre>
+Now let's try to push to the dev environment aka. http://dev.littletinker.co/REPO_NAME
+<pre>git push dev master</pre>
+Now lets push to github.com (aka "origin")
+"master" is just the name of the branch you're trying to push
+<pre>git push origin master</pre>
+
+
+<br /><br />
+
+<h2>Joining an existing project</h2>
+<br />
+If another team member created the repo already and it is your first time working on this project, clone it into the local directory of your choosing.
+<pre>
+cd Sites/
+mkdir REPO_NAME
+cd REPO_NAME
+git clone https://github.com/LittleTinker/REPO_NAME.git
+</pre>
+
+
+Always PULL first! 
+<pre>git pull</pre>
+
+If this is your first time working on this project, add a remote called "dev" 
+<pre>git remote add dev ssh://minitinker.littletinker.co://Volumes/Macintosh\ HD2/Documents/git/REPO_NAME.git</pre>
+
+If you are creating a new feature, create a branch and work on that. Don't worry we'll merge it back to the master when you're ready.
+<pre>git checkout -b BRANCH_NAME</pre>
+
+You may commence making sweet shit now.
+Done? Commit that muther. 
+<pre>git commit -am 'commit messg'</pre>
+
+To merge branch to the master
+<pre>git checkout master
+git merge BRANCH_NAME
+</pre>
+
+To delete branch
+<pre>git branch -d BRANCH_NAME</pre>
+
+Push it!
+If you are working on a branch..
+<pre>git push dev BRANCH_NAME</pre>
+or if you are working on the master..
+<pre>git push dev master</pre>
+
+<br>
+
+<h2>Great work! <a href="http://littletinker.co/drinkup" style="color:#bbb;" target="_blank">Go have a beer.</a> </h2>
+{% endblock %}
