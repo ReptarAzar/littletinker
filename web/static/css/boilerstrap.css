@@ -2577,12 +2577,14 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-	color: #555555;
 	background-color: rgba(255, 255, 255, 0.85);
 	font-family: 'TisaOT-Bold';
 	border: 1px solid #ddd;
 	border-bottom-color: transparent;
-	cursor: default;
+	cursor: pointer;
+}
+.nav-tabs li:hover {
+	cursor: pointer;	
 }
 .nav-pills > li > a {
 	padding-top: 8px;

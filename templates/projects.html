@@ -1,160 +1,65 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Little Tinker Projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="We scale meaningful experiences.">
-    <meta name="author" content="Christopher Azar for Little Tinker">
+{% extends 'base.html' %}
 
-    <!-- Le styles -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <script src="../js/libs/modernizr-2.5.3.min.js"></script>
-  
-  <link rel="stylesheet" href="../css/project-style.css" />
-  
-  
-    <script src="../js/modernizr-transitions.js"></script>
-  
-  <!-- scripts at bottom of page -->
+{% block title %}Projects{% endblock %}
 
-</head>
+{% block head %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/project-style.css" />
+{% endblock %}
 
-
-
-<body>
-   <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-
-
-          <a class="brand" id="logo" href="http://littletinker.co" id="logo"><img class="hidden-phone" src="../img/logotype.png" width="283" height="43" alt="Little Tinker" title="Take me home tonight."><img class="hardhat hidden-phone" src="../img/hardhat-icon-10.png" alt="Little Tinker" title="Take me home tonight." width="52" height="46"> <img class="visible-phone" src="../img/logotype-iphone.png" alt="Little Tinker" title="Take me home tonight." width="269" height="75"></a>
-          <div class="nav-collapse">
-              <ul class="nav pull-right">
-                <li><a href="/">projects</a></li>
-                <li><a href="../about/">about</a></li>
-                <li><a href="http://makesweetshit.com">blog</a></li>
-                <li><a data-toggle="modal" href="#contact" title="Email us!">contact</a></li>
-              </ul>
-           
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
+{% block main %}
     <div class="row-fluid">
     <div class="span12 intro project-images">
     <p>We make sweet shit. Any questions? Of course not.</p> 
   <div id="container" class="transitions-enabled centered clearfix">
 
- <div class="box col4"> <a href="foursquare-rocket/" title="irene!"><img src="thumbs/4sqrocket.png" title="project image" alt="project image" /></a>
-  <p><a href="foursquare-rocket/" title="irene!">Foursquare Gum Ball Rocket</a> <i class="icon-qrcode"></i><i class="icon-cog"></i><i class="icon-barcode"></i></p>
+ <div class="box col4"> <a href="/project/2" title="Foursquare Gum Ball Rocket"><img src="{{ STATIC_URL }}img/thumbs/4sqrocket.png" title="Foursquare Gum Ball Rocket" alt="Foursquare Gum Ball Rocket" /></a>
+  <p><a href="/project/2" title="Foursquare Gum Ball Rocket!">Foursquare Gum Ball Rocket</a> <i class="icon-qrcode"></i><i class="icon-cog"></i><i class="icon-barcode"></i></p>
   </div>
 
   <div class="box col2">
-    <a href="http://irene.littletinker.co" target="_blank" title="irene!"><img src="thumbs/mari.png" title="project image" alt="project image" /></a>
-  <p><a href="http://irene.littletinker.co" target="_blank" title="irene!">Irene</a></p>
+    <a href="http://irene.littletinker.co" target="_blank" title="Irene"><img src="{{ STATIC_URL }}img/thumbs/mari.png" title="Irene" alt="Irene" /></a>
+  <p><a href="http://irene.littletinker.co" target="_blank" title="Irene">Irene</a></p>
   </div>
 
   <div class="box col2">
-    <img src="thumbs/washer.png" title="project image" alt="project image" />
+    <img src="{{ STATIC_URL }}img/thumbs/washer.png" title="Tweeting Washer" alt="Tweeting Washer" />
   <p>Tweeting Washer</p>
   </div>
 
- <div class="box col4"> <a href="redbull/" title="Redbull"><img src="thumbs/redbull.png" title="project image" alt="project image" /></a>
-  <p><a href="/redbull/" title="Redbull">Red Bull Creation</a> <i class="icon-qrcode"></i><i class="icon-cog"></i><i class="icon-barcode"></i></p>
+ <div class="box col4"> <a href="/project/1" title="Red Bull Creation"><img src="{{ STATIC_URL }}img/thumbs/redbull.png" title="Red Bull Creation" alt="Red Bull Creation" /></a>
+  <p><a href="/project/1" title="Red Bull Creation">Red Bull Creation</a> <i class="icon-qrcode"></i><i class="icon-cog"></i><i class="icon-barcode"></i></p>
   </div>
 
   <div class="box col4">
-    <a href="http://drinkupgame.com" target="_blank" title="#DrinkUp"><img src="thumbs/drinkup.png" title="project image" alt="project image" /></a>
+    <a href="http://drinkupgame.com" target="_blank" title="#DrinkUp"><img src="{{ STATIC_URL }}img/thumbs/drinkup.png" title="#DrinkUp" alt="#DrinkUp" /></a>
     <p><a href="http://drinkupgame.com" target="_blank" title="#DrinkUp">#DrinkUp</a> <i class="icon-qrcode"></i><i class="icon-cog"></i><i class="icon-barcode"></i> </p>
   </div>
 
   <div class="box col2">
-    <a href="http://littletinker.co/instatinker" title="instatinker"><img src="thumbs/instatinker.png" title="project image" alt="project image" /></a>
-  <p><a href="http://littletinker.co/instatinker" title="instatinker">InstaTinker </a></p>
+    <a href="http://littletinker.co/instatinker" title="InstaTinker"><img src="{{ STATIC_URL }}img/thumbs/instatinker.png" title="InstaTinker" alt="InstaTinker" /></a>
+  <p><a href="http://littletinker.co/instatinker" title="InstaTinker">InstaTinker</a></p>
   </div>
 
   <div class="box col2">
-    <a href="http://makesweetshit.com/post/19659960283/little-tinkers-check-ins" title="map 4sq checkins"><img src="thumbs/4sqmap.png" title="project image" alt="project image" /></a>
+    <a href="http://makesweetshit.com/post/19659960283/little-tinkers-check-ins" title="map 4sq checkins"><img src="{{ STATIC_URL }}img/thumbs/4sqmap.png" title="map 4sq checkins" alt="map 4sq checkins" /></a>
   <p><a href="http://makesweetshit.com/post/19659960283/little-tinkers-check-ins" title="Map Your 4sq Check-ins" >Map Your 4sq Check-ins</a></p>
   </div>
 
   <div class="box col2">
-    <a href="http://littletinker.co/all-you-need" target="_blank" title="...is love"><img src="thumbs/love.png" title="project image" alt="project image" /></a>
+    <a href="http://littletinker.co/all-you-need" target="_blank" title="...is love"><img src="{{ STATIC_URL }}img/thumbs/love.png" title="project image" alt="project image" /></a>
   <p><a href="http://littletinker.co/all-you-need" target="_blank" title="...is love">All You Need Is Love</a></p>
   </div>
 
   <div class="box col2">
-    <a href="http://littletinker.co/projects/git.html" title="Git (for agile devs)"><img src="thumbs/octocats.png" title="project image" alt="project image" /></a>
+    <a href="http://littletinker.co/projects/git.html" title="Git (for agile devs)"><img src="{{ STATIC_URL }}img/thumbs/octocats.png" title="project image" alt="project image" /></a>
   <p><a href="http://littletinker.co/projects/git.html" title="Git (for agile devs)">Git (for agile devs)</a></p>
   </div>
 
 </div> <!-- #container -->
- 
+{% endblock %}
 
-
-
-
-                    <footer>
-                   <div class="span12 row-fluid">
-             <p>Little Tinker &copy; 2012 &nbsp;&nbsp;<span>|</span> <a href="mailto:info@littletinker.co" target="_blank"><img src="../img/ico/email.png" width="16" height="16" alt="Email"></a> <a href="mailto:info@littletinker.co" target="_blank">Email</a> <span>|</span> <a href="http://twitter.com/littletinkerco" target="_blank"><img src="../img/ico/twitter-2.png" width="16" height="16" alt="Twitter"></a> <a href="http://twitter.com/littletinkerco" target="_blank">Twitter</a> <span>|</span> <a href="http://www.facebook.com/littletinkerco" target="_blank"><img src="../img/ico/facebook.png" width="16" height="16" alt="Facebook"></a> <a href="http://www.facebook.com/littletinkerco" target="_blank">Facebook</a> <span>|</span> <a href="http://littletinker.co/instatinker" target="_blank"><img src="../img/ico/instagram.png" width="16" height="16" alt="Instagram"></a> <a href="http://littletinker.co/instatinker" target="_blank">InstaTinker</a>  <span>|</span>  <a href="https://github.com/littletinker" target="_blank"><img src="../img/ico/github.png" width="16" height="16" alt="Github"></a> <a href="https://github.com/littletinker" target="_blank">Github</a> <span>|</span> <img src="../img/ico/phone.png" width="16" height="16" alt="phone">  <a href="tel:4154846537">(415)484-6537</a></p>
-             
-             <a href="http://www.w3.org/html/logo/" target="_blank"><img class="pull-right html5-badge" src="../img/html5-badge.png" width="165" height="64" alt="Html5 Badge"></a></div><!--/span-->
-                  </footer>
-           </div><!--/row-->      
-
-
-
-    </div><!--/.fluid-container-->
-<!-- Begin Form -->
-<div class="modal hide fade" id="contact">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal">×</button>
-    <h3>What's up?</h3>
-  </div>
-  <div class="modal-body">
-      <form id="emf-form" enctype="multipart/form-data" method="post" action="###" name="emf-form">
-              <input class="dark" onfocus="this.value=''" id="element_0" name="element_0" value="Name" size="80" class="validate[required]" type="text" />
-              <input class="dark" onfocus="this.value=''" id="element_1" name="element_1" value="Email" size="80" class="validate[required]" type="text" />
-              <textarea class="dark" onfocus="this.value=''" id="element_2" name="element_2" cols="80" rows="6" class="validate[required]">Message</textarea>
-              <input name="element_counts" value="3" type="hidden" /> 
-          <input name="embed" value="forms" type="hidden" />
-
-          <p> 235 Harrison Street Syracuse, NY 13210  <span class="pull-right"> (415) 484-6537 &nbsp;</span></p> 
-          </div>
-          <div class="modal-footer">
-          <a href="http://twitter.com/littletinkerco" target="_blank" class="tip twit pull-left"><img src="img/ico/twitter-2.png" width="16" height="16" alt="Twitter"><span>Twitter</span></a>
-
-          <a href="https://foursquare.com/littletinkerco" target="_blank" class="tip fsq pull-left"><img src="img/ico/4sq.png" width="16" height="16" alt="4sq"><span>Foursquare</span></a>
-
-          <a href="https://www.facebook.com/LittleTinkerCo" target="_blank" class="tip fb pull-left"><img src="img/ico/facebook.png" width="16" height="16" alt="Facebook"><span>Facebook</span></a>
-
-          <a href="mailto:info@littletinker.co" target="_blank" class="tip email pull-left"><img src="img/ico/email.png" width="16" height="16" alt="Email"><span>info@littletinker.co</span></a>
-
-          <input  type="reset" value="Oops" class="reset btn" />
-          <input  type="submit" value="Send" class="submit btn btn-inverse" />
-      </form>  
-  </div>
-</div>  
-<!-- End Form -->  
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/jquery.masonry.min.js"></script>
+{% block bottom_scripts %}
+<script src="{{ STATIC_URL }}js/jquery.masonry.min.js"></script>
 <script>
 var $container = $('#container');
 
@@ -166,16 +71,5 @@ $container.imagesLoaded( function(){
     isFitWidth: true
   });
 });
-
-
 </script>
-<!-- Analytics for LittleTinker.co -->
-    <script>
-        var _gaq=[['_setAccount','UA-28931578-2'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==loproject imageion.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-
-</body>
-</html>
+{% endblock %}

@@ -1,46 +1,123 @@
 {% extends 'base.html' %}
 
-{% block title %}About Little Tinker{% endblock %}
+{% block title %}About{% endblock %}
 
 {% block main %}
       <div class="row-fluid">
-		<div class="span12 intro">
-         <div id="heading" class="trade-bold-2"></div>
-            
-              <ul class="about span4 pull-left">
-                <li>We tell our creative friends we are engineers. </li>
-                <li>We tell our developer friends we are artists.</li>
-                <li class="last">And we tell our parents not to worry.</li>
+<ul class="nav nav-tabs nav-stacked span4 pull-right nav_buttons" id="about-subnav">
+                <li class="active home"><a id="about" class="switcher">About</a></li>
+                <li><a id="team" class="switcher">Team</a></li>
+                <li><a id="process" class="switcher">Process</a></li>
+                <li><a id="resources" class="switcher">Resources</a></li>
+                <li><a id="investors" class="switcher">Investors</a></li>
+                <li><a id="news" class="switcher">In the News</a></li>
                 </ul>
-              <p class="span6 pull-right"> <br>At Little Tinker we build meaningful experiences and bring these stories to life with intelligent electronics that interact with online events. Our products, strive to reach one goal create a meaningful and magical experience for our audience that gives them a story to share.</p> 
-        </div>
-        <div class="span12 hero-head">
-            <h3 id="sweet-shit">The Team</h3>
-            <h4 class="we-heart-u"> <a href="http://makesweetshit.com/tagged/sweet-shit">we <i class="icon-heart icon-white"></i> you.</a></h4>
-        </div>
 
-        <div id="projects" class="span12 row-fluid team">                      
-        <div class="span4">
-            <img src="{{ STATIC_URL }}img/team/isaac.png" width="90%" alt="Isaac"></a>
-            <h2>Isaac Budmen <span><a href="http://twitter.com/ibudmen" target="_blank">@iBudmen</a></span></h2>
-            <p>Co-founder, CEO</p>
-            <p> </p>
-        </div>
-            <div class="span4">
-            <img src="{{ STATIC_URL }}img/team/reptar.png" width="90%" alt="Isaac"></a>
-            <h2>Christopher Azar <span><a href="http://twitter.com/ReptarAzar" target="_blank">@ReptarAzar</a></span></h2>
-            <p>Co-founder, Designer &amp; Developer</p>
-            <p> </p>
-        </div>
 
-      <div class="span4">
-          <img src="{{ STATIC_URL }}img/team/becker.png" width="90%" alt="Isaac"></a>
-          <h2>Chris Becker <span><a href="http://twitter.com/Cbeck527" target="_blank">@Cbeck527</a></span></h2>
-          <p>Software Engineer</p>
-          <p> </p>
-      </div>
-           
-          
-            </div><!--/span-->
-          </div><!--/row-->
+        <div class="span8 pull-left" id="main">
+    
+
+    <div id="switcher-panel"></div>
+    
+    <!-- Dummy Data -->
+    <div id="about-content" class="switcher-content show">
+      <h1>About Little Tinker</h1>
+       <p> At Little Tinker we build meaningful experiences and bring these stories to life with intelligent electronics that interact with online events. Our products, strive to reach one goal create a meaningful and magical experience for our audience that gives them a story to share.</p> 
+    </div>
+
+    <div id="team-content" class="switcher-content">
+    <h2>Team</h2>
+      <p>We have the perfect balance of hacker, hustler and designer that every startup desires. </p>
+                      
+    <div class="span4">
+    <img src="{{ STATIC_URL }}img/team/isaac.png" alt="Isaac"></a>
+    <h2>Isaac Budmen </h2>
+      <h3>Co-founder, CEO</h3>
+      <!-- <a href="http://twitter.com/ibudmen" target="_blank">@iBudmen</a> -->
+    
+    <p>Comfortable Foot Attire Enthusiast. Vegetarian (but not the activist kind), cyclist, and coxswain of the 5th fastest college crew in the United States. He bears resemblance to his idol and mentor, Dennis Crowley, CEO of Foursquare. He's the hustler that loves hacking, revolutionary products, and bringing delightful experiences to the masses.</p>
+    </div>
+    <div class="span4">
+    <img src="{{ STATIC_URL }}img/team/reptar.png" alt="Isaac"></a>
+    <h2>Christopher Azar </h2>
+      <h3>Co-founder, Designer &amp; Developer</h3>
+    <!-- <a href="http://twitter.com/ReptarAzar" target="_blank">@ReptarAzar</a> -->
+    
+    <p>Total arsty-tech-nerd. Easily facinated. Obsessed with the harmony of form and function.</p>
+    <p>Former design intern for the Washington Post digital innovation lab and web design teacher at Syracuse University's Maxwell School. </p>  
+    </div>
+
+    <div class="span4">
+    <img src="{{ STATIC_URL }}img/team/becker.png" alt="Isaac"></a>
+    <h2>Chris Becker </h2>
+      <h3>Software Engineer</h3>
+     <!--  <p><a href="http://twitter.com/Cbeck527" target="_blank"><img src="{{ STATIC_URL }}img/ico/twitter-2.png" width="16" height="16" alt="Twitter"></a></p>  -->
+    <p>Weakness for cute chicks who like graphic design. Redditor and audiophile. Designer and Python charmer. Born for the startup hustle.</p>
+    Creator of various web sensations, including <a href="http://instantboat.org" target="_blank">InstantBoat.org</a>, <a href="http://redditbirthday.com/" target="_blank">RedditBirthday.com</a>, <a href="http://whatsthiscolor.com/" target="_blank">WhatsThisColor.com</a>, and who could forget <a href="http://thingsidratherdothangotoblockparty.com/" target="_blank">ThingsIdRatherDoThanGoToBlockparty.com</a>.
+    </div>
+
+    <p>&nbsp;</p>
+    <p>We tell our creative friends we are engineers. </p>
+      <p>We tell our developer friends we are artists.</p>
+      <p class="last">And we tell our parents not to worry.</p>
+
+    </div>
+
+    <div id="process-content" class="switcher-content">
+    <h2>Process</h2>
+    <p><img src="{{ STATIC_URL }}img/process.png" width="100%" class="process"/></p>
+    </div>
+
+    <div id="resources-content" class="switcher-content">
+    <h2>Resources</h2>
+     <div class="span4">
+    <img src="{{ STATIC_URL }}img/littletinker-logo.png" alt="the next web">
+    <h2>Little Tinker Logo </h2>
+   
+    <p>Use for press purposes.  <br /><a href="{{ STATIC_URL }}img/littletinker-logo.ai" title="download" target="_blank">Illustrator</a> | <a href="{{ STATIC_URL }}img/littletinker-logo.png" title="download" target="_blank">png</a></p>
+    </div>
+    </div>
+
+    <div id="investors-content" class="switcher-content">
+    <h2>Investors</h2>
+    <div class="haha">
+    <p>No thanks, we got it.</p>
+    </div>
+
+    </div>
+
+    <div id="news-content" class="switcher-content">
+    <h2>News</h2>
+      <p>Sometime people print nice things about us...</p>
+                      
+    <div class="span4">
+    <a href="#"><img src="{{ STATIC_URL }}img/tnw.png" alt="the next web"></a>
+    <h2>the next web </h2>
+    <p> Check out this drinking game for Twitter, it’s called #DrinkUp <br />
+      <a href="http://thenextweb.com/shareables/2012/02/09/check-out-this-drinking-game-for-twitter-its-called-drinkup/" target="_blank">Read the article</a></p>
+    </div>
+    <div class="span4">
+    <a href="#"><img src="{{ STATIC_URL }}img/metro.png" alt="metro"></a>
+    <h2>Metro Boston</h2>    
+    <p>#Drinkup: A new Twitter drinking game <br />
+      <a href="http://www.metro.us/boston/local/article/1093271--drinkup-a-new-twitter-drinking-game" target="_blank">Read the article</a></p>  
+    </div>
+
+    <div class="span4">
+    <a href="#"><img src="{{ STATIC_URL }}img/about4sq.png" alt="Isaac"></a>
+    <h2>About Foursquare </h2>    
+    <p>Gumball machine powered by foursquare check-ins <br />
+      <a href="http://aboutfoursquare.com/gumball-machine-powered-by-foursquare-check-ins/" target="_blank">Read the article</a></p>
+    </div>
+
+  </div><!--/span-->	
+</div><!--/row-->
+{% endblock %}
+
+{% block bottom_scripts %}
+<script type='text/javascript'>
+$(document).ready(function() {
+  jcps.fader(300, '#switcher-panel');
+});
+</script>  
 {% endblock %}
