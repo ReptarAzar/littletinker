@@ -118,6 +118,15 @@
 <script type='text/javascript'>
 $(document).ready(function() {
   jcps.fader(300, '#switcher-panel');
+{% if permalink %}
+  $("#switcher-panel").html("");
+  var _contentId = '#{{ permalink }}-content';
+  var _content = $(_contentId).html();
+  $("#switcher-panel").html(_content);
+  $("#about").parent().removeClass("active");
+  currentContent = "{{ permalink }}";
+  $("#{{ permalink }}").parent().addClass("active");
+{% endif %}
 });
 </script>  
 {% endblock %}

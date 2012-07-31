@@ -58,15 +58,6 @@
 		});
 	}
 
-	// add .active to current link on the about page subnav
-
-	// $(function() {
-	//     $('#about-subnav').click(function() {
-	//         $(this).find('li').addClass('active');
-	//     });
-	// });
-
-
 	$.fn.pager = function(clas, options) {
 
 		var settings = {

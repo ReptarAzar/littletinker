@@ -7,7 +7,8 @@ from web.models import Project, ProjectImage
 def home(request):
     return render_to_response('index.html',locals(),context_instance=RequestContext(request))
 
-def about(request):
+def about(request, perm = None):
+    permalink = perm
     return render_to_response('about.html',locals(),context_instance=RequestContext(request))
 
 def projects(request):

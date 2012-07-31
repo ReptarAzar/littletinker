@@ -8,6 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('web.views',
     url(r'^$', 'home'),
     url(r'^about/$', 'about'),
+    url(r'^about/(.+)/$', 'about'),
     url(r'^projects/$', 'projects'),
     url(r'^project/(\d+)$', 'one_project'),
     url(r'^labs/(.+)$', 'labs'),
