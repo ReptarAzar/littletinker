@@ -341,17 +341,7 @@ a img {
   font-size: 11px;
   line-height: 1.4em;
   float: left;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
-
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
--webkit-box-shadow: rgba(0,0,0,0.25) 0 0 4px, rgba(0,0,0,0.30) 0 3px 4px;
-box-shadow: rgba(0,0,0,0.25) 0 0 4px, rgba(0,0,0,0.30) 0 3px 4px;
--moz-box-shadow: rgba(0,0,0,0.25) 0 0 4px, rgba(0,0,0,0.30) 0 3px 4px;
-border-top: 2px solid #fff;          
+/
 }
 
 .box h2 {
@@ -359,7 +349,6 @@ border-top: 2px solid #fff;
   font-weight: 200;
 }
 .box p {
-  /*border-top: 2px solid #eee;*/
   border-top: 1px solid rgba(0,0,0,0.15);
 }
 
@@ -399,13 +388,8 @@ div.col2.head {
   -webkit-box-shadow: rgba(0,0,0,0.25) 0 0 4px, rgba(0,0,0,0.30) 0 3px 4px;
   box-shadow: rgba(0,0,0,0.25) 0 0 4px, rgba(0,0,0,0.30) 0 3px 4px;
   -moz-box-shadow: rgba(0,0,0,0.25) 0 0 4px, rgba(0,0,0,0.30) 0 3px 4px;
-  border-top: 2px solid #fff;  
+  border-top: 2px solid #fff; 
 
-
- /*background:url(http://images.apple.com/v/iphone/b/images/buystrip_bg.jpg) bottom left repeat-x #fdfdfd;*/
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px, rgba(0, 0, 0, 0.2) 0 0 1px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px, rgba(0, 0, 0, 0.2) 0 0 1px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px, rgba(0, 0, 0, 0.2) 0 0 1px; 
 }
 .col1 { width: 90px; }
 .col2 { width: 190px; }

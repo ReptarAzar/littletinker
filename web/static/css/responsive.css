@@ -198,6 +198,13 @@
   width: 100%;
   float:left;
 }
+.col2.head.pull-right {
+  width:285px !important;  
+  float: left;
+}
+.span12 {
+  overflow-x: hidden;
+}
 
 }
 @media (max-width:775px) {body {
