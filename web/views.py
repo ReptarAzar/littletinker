@@ -26,7 +26,7 @@ def labs(request, projectNameRequest):
 
 def contact_us(request):
     if request.method == 'POST':
-        send_mail('New #TinkerMessage from ' + request.POST['name'], request.POST['message'], 'Cbeck527@gmail.com', ['info@littletinker.co'], fail_silently=False)
+        send_mail('New #TinkerMessage from ' + request.POST['name'], request.POST['message'], request.POST['email'], ['info@littletinker.co'], fail_silently=False)
         return HttpResponseRedirect("/")
     else:
         return HttpResponse("500")

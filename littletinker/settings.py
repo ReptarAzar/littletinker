@@ -1,6 +1,7 @@
 import os
 
 DEPLOYED = False
+DEV = True
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -48,6 +49,8 @@ MEDIA_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../media'
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
 if DEPLOYED:
     MEDIA_URL = 'http://littletinker.co/media/'
+if DEV:
+    MEDIA_URL = 'http://dev2.littletinker.co/media/'
 else:
     MEDIA_URL = '/media/'
 
@@ -59,7 +62,12 @@ STATIC_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../stati
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+if DEPLOYED:
+    STATIC_URL = 'http://littletinker.co/static/'
+if DEV:
+    STATIC_URL = 'http://dev2.littletinker.co/static/'
+else:
+    STATIC_URL = '/staic/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -143,8 +151,9 @@ LOGGING = {
     }
 }
 
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'cbeck527@gmail.com'
-EMAIL_HOST_PASSWORD = 'Tw33kings03d'
-EMAIL_PORT = '587'
+if not DEPLOYED:
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = 'cbeck527@gmail.com'
+    EMAIL_HOST_PASSWORD = 'Tw33kings03d'
+    EMAIL_PORT = '587'
