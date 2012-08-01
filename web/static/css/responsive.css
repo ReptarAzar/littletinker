@@ -207,9 +207,6 @@
     width:285px !important;  
     float: left;
   }
-  .span12 {
-    overflow-x: hidden;
-  }
   footer a.contact-label {
     display: none;
   }
