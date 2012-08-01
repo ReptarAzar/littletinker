@@ -54,7 +54,9 @@
 .hidden-desktop {
   display: none;
 }
-@media (max-width:767px) {.navbar .btn,.navbar .btn-group {
+@media (max-width:767px) {
+
+.navbar .btn,.navbar .btn-group {
   margin-top: 40px;
 }
 .visible-phone {
@@ -88,7 +90,9 @@
 }
 
 }
-@media (min-width:768px) and (max-width:979px) {.visible-tablet {
+@media (min-width:768px) and (max-width:979px) {
+
+.visible-tablet {
   display: block;
 }
 .hidden-tablet {
@@ -180,6 +184,7 @@
     position: relative;
     float: left;
     width: 150px;
+    margin-bottom: 30px;
   }
   .col4 {
     width:300px !important;
@@ -193,29 +198,37 @@
   .col2 img {
     max-width: 300px !important;
     width:  300px !important;
+  }
+  #projects-description {
+    width: 100%;
+    float:left;
+  }
+  .col2.head.pull-right {
+    width:285px !important;  
+    float: left;
+  }
+  .span12 {
+    overflow-x: hidden;
+  }
+  footer a.contact-label {
+    display: none;
+  }
+  .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
 }
-#projects-description {
-  width: 100%;
-  float:left;
-}
-.col2.head.pull-right {
-  width:285px !important;  
-  float: left;
-}
-.span12 {
-  overflow-x: hidden;
-}
-footer a.contact-label {
-  display: none;
-}
-}
-@media (max-width:775px) {body {
+
+@media (max-width:775px) {
+
+body {
   padding-left: 20px;
   padding-right: 20px;
 }
 .container-fluid {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .navbar-fixed-top {
   margin-left: -20px;
@@ -295,6 +308,8 @@ p.subhead {
 }
 
 }
+
+
 @media (min-width:768px) and (max-width:979px) {.row {
   margin-left: -20px;*zoom:1;
 }
