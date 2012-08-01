@@ -205,7 +205,9 @@
 .span12 {
   overflow-x: hidden;
 }
-
+footer a.label {
+  display: none;
+}
 }
 @media (max-width:775px) {body {
   padding-left: 20px;
