@@ -1,10 +1,5 @@
 import os
-
-DEPLOYED = False
-DEV = True
-
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+from littletinker.local_settings import *
 
 ADMINS = (
     ('Chris Becker', 'becker@littletinker.co'),
@@ -150,10 +145,3 @@ LOGGING = {
         },
     }
 }
-
-if not DEPLOYED:
-    EMAIL_USE_TLS = True
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = 'cbeck527@gmail.com'
-    EMAIL_HOST_PASSWORD = 'Tw33kings03d'
-    EMAIL_PORT = '587'
