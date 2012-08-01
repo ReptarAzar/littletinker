@@ -58,6 +58,8 @@
 		});
 	}
 
+
+
 	$.fn.pager = function(clas, options) {
 
 		var settings = {
