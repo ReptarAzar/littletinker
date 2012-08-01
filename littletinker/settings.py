@@ -1,5 +1,10 @@
 import os
-from littletinker.local_settings import *
+
+# import le local settings
+try:
+    from littletinker.local_settings import *
+except ImportError, exp:
+    pass
 
 ADMINS = (
     ('Chris Becker', 'becker@littletinker.co'),
