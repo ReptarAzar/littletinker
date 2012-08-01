@@ -54,9 +54,7 @@
 .hidden-desktop {
   display: none;
 }
-@media (max-width:767px) {
-
-.navbar .btn,.navbar .btn-group {
+@media (max-width:767px) {.navbar .btn,.navbar .btn-group {
   margin-top: 40px;
 }
 .visible-phone {
@@ -90,9 +88,7 @@
 }
 
 }
-@media (min-width:768px) and (max-width:979px) {
-
-.visible-tablet {
+@media (min-width:768px) and (max-width:979px) {.visible-tablet {
   display: block;
 }
 .hidden-tablet {
@@ -216,12 +212,12 @@ footer a.contact-label {
 }
 }
 @media (max-width:775px) {
-
 body {
   padding-left: 20px;
   padding-right: 20px;
 }
 .container-fluid {
+  overflow-x: hidden;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -303,9 +299,7 @@ p.subhead {
 }
 
 }
-@media (min-width:768px) and (max-width:979px) {
-
-.row {
+@media (min-width:768px) and (max-width:979px) {.row {
   margin-left: -20px;*zoom:1;
 }
 .row:before,
@@ -494,9 +488,7 @@ input.span1,textarea.span1,.uneditable-input.span1 {
 }
 
 }
-@media (max-width:999px) {
-
-  body {
+@media (max-width:999px) {body {
   padding-top: 0;
 }
 .navbar-fixed-top {
