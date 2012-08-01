@@ -198,38 +198,33 @@
   .col2 img {
     max-width: 300px !important;
     width:  300px !important;
-  }
-  #projects-description {
-    width: 100%;
-    float:left;
-  }
-  .col2.head.pull-right {
-    width:285px !important;
-    height: 174px !important;  
-    float: left;
-  }
-  footer a.contact-label {
-    display: none;
-  }
-  /*.container-fluid {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  [class*="span"] {
-    float: left;
-    margin-left: 10px;
-  }*/
-  
 }
-
+#projects-description {
+  width: 100%;
+  float:left;
+}
+.col2.head.pull-right {
+  width:285px !important;  
+  height: 174px !important;
+  float: left;
+}
+.span12 {
+  overflow-x: hidden;
+}
+footer a.contact-label {
+  display: none;
+}
+}
 @media (max-width:775px) {
 
-
-/*.container-fluid {
-  padding-left: 30px;
-  padding-right: 30px;
-}*/
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .navbar-fixed-top {
   margin-left: -20px;
   margin-right: -20px;
@@ -276,7 +271,7 @@ p.subhead {
 }
 .span3,.span4,.span7 {
   width: 100% !important;
-  /*margin-left: 3.25% !important;*/
+  margin-left: 3.25% !important;
   margin-bottom: 3% !important;
 }
 .as-seen-on .span2 img,.as-seen-on .span3 img {
@@ -308,9 +303,9 @@ p.subhead {
 }
 
 }
+@media (min-width:768px) and (max-width:979px) {
 
-
-@media (min-width:768px) and (max-width:979px) {.row {
+.row {
   margin-left: -20px;*zoom:1;
 }
 .row:before,
@@ -499,7 +494,9 @@ input.span1,textarea.span1,.uneditable-input.span1 {
 }
 
 }
-@media (max-width:999px) {body {
+@media (max-width:999px) {
+
+  body {
   padding-top: 0;
 }
 .navbar-fixed-top {
