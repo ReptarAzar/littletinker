@@ -184,17 +184,17 @@
     margin-left: 10px;
   }
   .col4 {
-    width:300px !important;
+    width:280px !important;
     text-align: center;
   }
   .col2 {
-    width:300px !important;
+    width:280px !important;
     text-align: center;
 
   }
   .col2 img {
-    max-width: 300px !important;
-    width:  300px !important;
+    max-width: 280px !important;
+    width:  280px !important;
 }
 #projects-description {
   width: 100%;
@@ -212,7 +212,7 @@ footer a.contact-label, footer span {
   display: none;
 }
 footer p {
-  font-size: .8em;
+  font-size: .85em;
 }
 }
 @media (max-width:775px) {
