@@ -102,7 +102,11 @@
 }
 
 }
-@media (max-width:480px) {#ytvideo,
+
+/* iPhone Styles */
+@media (max-width:480px) {
+
+  #ytvideo,
   #ytvideo2 {
     float: left;
     margin-right: 10px;
@@ -177,6 +181,23 @@
     float: left;
     width: 150px;
   }
+  .col4 {
+    width:300px !important;
+    text-align: center;
+  }
+  .col2 {
+    width:300px !important;
+    text-align: center;
+
+  }
+  .col2 img {
+    max-width: 300px !important;
+    width:  300px !important;
+}
+#projects-description {
+  width: 100%;
+  float:left;
+}
 
 }
 @media (max-width:775px) {body {
