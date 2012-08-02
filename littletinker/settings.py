@@ -67,7 +67,7 @@ if DEPLOYED:
 if DEV:
     STATIC_URL = 'http://dev2.littletinker.co/static/'
 else:
-    STATIC_URL = '/staic/'
+    STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -102,6 +102,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
 ROOT_URLCONF = 'littletinker.urls'
@@ -126,6 +127,7 @@ INSTALLED_APPS = (
     'web',
     'south',
     'django.contrib.sitemaps',
+    'django.contrib.flatpages',
 )
 
 LOGGING = {

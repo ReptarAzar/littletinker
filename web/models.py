@@ -18,6 +18,9 @@ class Project(models.Model):
     category = models.ManyToManyField('Category', blank=True)
     url = models.URLField(blank=True)
 
+    def get_absolute_url(self):
+        return "/project/%s" % (self.id)
+
     def __unicode__(self):
         return "%s" % (self.title)
 
