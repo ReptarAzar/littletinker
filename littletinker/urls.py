@@ -18,12 +18,36 @@ class ProjectSitemap(Sitemap):
     def lastmod(self, obj):
         return obj.date
 
+class HomeSitemap(Sitemap):
+    changefreq = "daily"
+    priority = 1.00
+
+    def items(self):
+        home = [{'name':"home", 'location':'/'},{'name':"about", 'location':'/projects'}]
+        return home
+
+    def location(self, obj):
+        return obj['location']
+
+class AboutSitemap(Sitemap):
+    changefreq = "daily"
+    priority = 0.9
+
+    def items(self):
+        home = [{'name':"about", 'location':'/about'},{'name':"team", 'location':'/about/team'},{'name':"process", 'location':'/about/process'}]
+        return home
+
+    def location(self, obj):
+        return obj['location']
+
 flatpage_dict = {
     'queryset': FlatPage.objects.all(),
 }
 
 sitemaps = {
-    'flatpages': GenericSitemap(flatpage_dict, priority=0.8),
+    'home': HomeSitemap,
+    'about': AboutSitemap,
+    'flatpages': GenericSitemap(flatpage_dict, priority=0.3),
     'projects': ProjectSitemap,
 }
 
