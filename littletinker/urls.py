@@ -2,8 +2,13 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from django.views.generic.simple import direct_to_template
 from littletinker import settings
+from django.contrib.sitemaps import Sitemap
 
 admin.autodiscover()
+
+class tinkerSitemap(Sitemap):
+    changefreq = "never"
+    priority = 0.5
 
 urlpatterns = patterns('web.views',
     url(r'^$', 'home'),
@@ -19,9 +24,13 @@ urlpatterns = patterns('web.views',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+    # le sitemap
+    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': tinkerSitemap})
+
 )
 
-if settings.DEBUG:
+if settings.DEBUG and settings.DEPLOYED is False:
     urlpatterns += patterns('',
         url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
             'document_root': settings.MEDIA_ROOT,
