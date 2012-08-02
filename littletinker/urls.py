@@ -11,7 +11,7 @@ urlpatterns = patterns('web.views',
     url(r'^about/(.+)/$', 'about'),
     url(r'^projects/$', 'projects'),
     url(r'^project/(\d+)$', 'one_project'),
-    url(r'^labs/(.+)$', 'labs'),
+    url(r'^project/git$', 'labs', {'projectNameRequest':'git'}),
     url(r'^jobs/$', direct_to_template, {'template': 'jobs.html'}),
     url(r'^contact/', 'contact_us'),
 
