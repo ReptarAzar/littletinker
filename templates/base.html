@@ -20,9 +20,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{% block title %}{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We scale meaningful experiences.">
-    <meta name="author" content="Christopher Azar for Little Tinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="We build physical and digital products that connect the internet to the real world and create delightful interactions with technology.">
+    <meta name="author" content="The Little Tinker team of code junkies and pixel pushers">
 
 
 
@@ -74,9 +74,10 @@
     <div class="container-fluid">
       {% block main %}
       {% endblock %}
-      <hr>
+      
       <footer>
         <div class="span12 row-fluid">
+          <hr>
           <p>Little Tinker &copy; 2012 &nbsp;&nbsp;<span>|</span> <a href="mailto:info@littletinker.co" target="_blank"><img src="{{ STATIC_URL }}img/ico/email.png" width="16" height="16" alt="Email"></a> <a href="mailto:info@littletinker.co" target="_blank" class="contact-label">Email</a> <span>|</span> <a href="http://twitter.com/littletinkerco" target="_blank"><img src="{{ STATIC_URL }}img/ico/twitter-2.png" width="16" height="16" alt="Twitter"></a> <a href="http://twitter.com/littletinkerco" target="_blank" class="contact-label">Twitter</a><span>|</span> <a href="http://www.facebook.com/littletinkerco" target="_blank"><img src="{{ STATIC_URL }}img/ico/facebook.png" width="16" height="16" alt="Facebook"></a> <a href="http://www.facebook.com/littletinkerco" target="_blank" class="contact-label">Facebook</a><span>|</span> <a href="tel:4154846537"><img src="{{ STATIC_URL }}img/ico/phone.png" width="16" height="16" alt="phone"></a>&nbsp;&nbsp;<a href="tel:4154846537" class="contact-label">(415) 484-6537</a></p>
           <a href="http://www.w3.org/html/logo/" target="_blank"><img class="pull-right html5-badge" src="{{ STATIC_URL }}img/html5-badge.png" width="165" height="64" alt="Html5 Badge"></a></div><!--/span-->
       </footer>

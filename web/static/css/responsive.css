@@ -54,9 +54,7 @@
 .hidden-desktop {
   display: none;
 }
-@media (max-width:767px) {
-
-.navbar .btn,.navbar .btn-group {
+@media (max-width:767px) {.navbar .btn,.navbar .btn-group {
   margin-top: 40px;
 }
 .visible-phone {
@@ -90,9 +88,7 @@
 }
 
 }
-@media (min-width:768px) and (max-width:979px) {
-
-.visible-tablet {
+@media (min-width:768px) and (max-width:979px) {.visible-tablet {
   display: block;
 }
 .hidden-tablet {
@@ -185,51 +181,57 @@
     float: left;
     width: 150px;
     margin-bottom: 30px;
+    margin-left: 10px;
   }
   .col4 {
-    width:300px !important;
+    width:280px !important;
     text-align: center;
   }
   .col2 {
-    width:300px !important;
+    width:280px !important;
     text-align: center;
 
   }
   .col2 img {
-    max-width: 300px !important;
-    width:  300px !important;
-  }
-  #projects-description {
-    width: 100%;
-    float:left;
-  }
-  .col2.head.pull-right {
-    width:285px !important;  
-    float: left;
-  }
-  footer a.contact-label {
-    display: none;
-  }
-  .container-fluid {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
+    max-width: 280px !important;
+    width:  280px !important;
 }
-
+#projects-description {
+  width: 100%;
+  float:left;
+}
+.col2.head.pull-right {
+  width:285px !important;  
+  height: 174px !important;
+  float: left;
+}
+.span12 {
+  overflow-x: hidden;
+}
+footer a.contact-label, footer span {
+  display: none;
+}
+footer p {
+  font-size: .85em;
+}
+}
 @media (max-width:775px) {
-
 body {
   padding-left: 20px;
   padding-right: 20px;
 }
 .container-fluid {
-  padding-left: 10px;
-  padding-right: 10px;
+  overflow-x: hidden;
+  padding-left: 0;
+  padding-right: 20px;
 }
 .navbar-fixed-top {
   margin-left: -20px;
   margin-right: -20px;
+}
+[class*="span"] {
+  float: left;
+  margin-left: 10px;
 }
 .container {
   width: auto;
@@ -286,6 +288,7 @@ p.subhead {
   float: none;
   text-align: center;
   position: relative;
+  right: 10px !important;
 }
 #switcher-panel {
   position: relative;
@@ -305,9 +308,16 @@ p.subhead {
 }
 
 }
+/* iPad Styles */
 
+@media (min-width:768px) and (max-width:979px) {
+div.intro #projects-description h1{
+  font-size: 1.5em;
+  margin: 20px 0;
+  line-height: 1em;
+}
 
-@media (min-width:768px) and (max-width:979px) {.row {
+.row {
   margin-left: -20px;*zoom:1;
 }
 .row:before,
@@ -496,7 +506,9 @@ input.span1,textarea.span1,.uneditable-input.span1 {
 }
 
 }
-@media (max-width:999px) {body {
+@media (max-width:999px) {
+
+body {
   padding-top: 0;
 }
 .navbar-fixed-top {
@@ -504,7 +516,7 @@ input.span1,textarea.span1,.uneditable-input.span1 {
   margin-bottom: 18px;
 }
 .navbar-fixed-top .navbar-inner {
-  padding: 0 5px 10px;
+  padding: 0 5px 10px 25px;
 }
 .navbar .container {
   width: auto;
@@ -835,7 +847,8 @@ p.subhead,p.about {
 }
 
 }
-@media (max-width:1350px) {div.intro h1 {
+@media (max-width:1350px) {
+  div.intro h1 {
   font-size: 2.85em;
   margin: 20px 0;
   line-height: 1em;
@@ -846,6 +859,7 @@ p.subhead,p.about {
   font-size: 2.5em;
   margin: 20px 0;
   line-height: 1em;
+  font-weight: normal;
 }
 div.intro img.bro {
   width: 375px;
