@@ -311,11 +311,10 @@ p.subhead {
 /* iPad Styles */
 
 @media (min-width:768px) and (max-width:979px) {
-div.intro #projects-description  h1, div.intro h1 {
+div.intro #projects-description h1{
   font-size: 1.5em;
   margin: 20px 0;
   line-height: 1em;
-  font-weight: normal;
 }
 
 .row {
