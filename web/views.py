@@ -5,6 +5,10 @@ from django.template.context import RequestContext
 from web.models import Project, ProjectImage
 
 
+def about(request, perm = None):
+    permalink = perm
+    return render_to_response('about.html',locals(),context_instance=RequestContext(request))
+
 def hacks(request, perm = None):
     permalink = perm
     return render_to_response('hacks.html',locals(),context_instance=RequestContext(request))
