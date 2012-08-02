@@ -309,6 +309,12 @@ p.subhead {
 
 }
 @media (min-width:768px) and (max-width:979px) {
+div.intro #projects-description  h1 {
+  font-size: 1.5em;
+  margin: 20px 0;
+  line-height: 1em;
+  font-weight: normal;
+}
 
 .row {
   margin-left: -20px;*zoom:1;
@@ -499,7 +505,9 @@ input.span1,textarea.span1,.uneditable-input.span1 {
 }
 
 }
-@media (max-width:999px) {body {
+@media (max-width:999px) {
+
+body {
   padding-top: 0;
 }
 .navbar-fixed-top {
@@ -507,7 +515,7 @@ input.span1,textarea.span1,.uneditable-input.span1 {
   margin-bottom: 18px;
 }
 .navbar-fixed-top .navbar-inner {
-  padding: 0 5px 10px;
+  padding: 0 5px 10px 25px;
 }
 .navbar .container {
   width: auto;
@@ -838,7 +846,8 @@ p.subhead,p.about {
 }
 
 }
-@media (max-width:1350px) {div.intro h1 {
+@media (max-width:1350px) {
+  div.intro h1 {
   font-size: 2.85em;
   margin: 20px 0;
   line-height: 1em;
@@ -849,6 +858,7 @@ p.subhead,p.about {
   font-size: 2.5em;
   margin: 20px 0;
   line-height: 1em;
+  font-weight: normal;
 }
 div.intro img.bro {
   width: 375px;
