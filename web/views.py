@@ -11,6 +11,10 @@ def about(request, perm = None):
     permalink = perm
     return render_to_response('about.html',locals(),context_instance=RequestContext(request))
 
+def about(request, perm = None):
+    permalink = perm
+    return render_to_response('hacks.html',locals(),context_instance=RequestContext(request))
+
 def projects(request):
     projects = Project.objects.all()
     return render_to_response('projects.html',locals(),context_instance=RequestContext(request))
