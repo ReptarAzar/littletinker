@@ -3,8 +3,8 @@ from django.contrib import admin
 from django.views.generic.simple import direct_to_template
 from littletinker import settings
 from web.models import Project
-from django.contrib.sitemaps import Sitemap, FlatPageSitemap
-from django.contrib.flatpages.models import Flatpage
+from django.contrib.sitemaps import Sitemap, GenericSitemap
+from django.contrib.flatpages.models import FlatPage
 
 admin.autodiscover()
 
@@ -19,7 +19,7 @@ class ProjectSitemap(Sitemap):
         return obj.date
 
 flatpage_dict = {
-    'queryset': Flatpage.objects.all(),
+    'queryset': FlatPage.objects.all(),
 }
 
 sitemaps = {
