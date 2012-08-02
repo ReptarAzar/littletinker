@@ -61,8 +61,8 @@
 
           <div class="nav-collapse">
               <ul class="nav pull-right">
-                <li id="projects-link"><a href="/projects">projects</a></li>
-                <li><a href="/about">about</a></li>
+                <li id="projects-link" {% block activeproject %}{% endblock %}><a href="/projects">projects</a></li>
+                <li {% block activeabout %}{% endblock %}><a href="/about">about</a></li>
                 <li><a href="http://makesweetshit.com">blog</a></li>
                 <li><a data-toggle="modal" href="#contact" title="Email us!">contact</a></li>
               </ul>

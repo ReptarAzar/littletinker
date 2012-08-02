@@ -1,0 +1,111 @@
+<!--
+      
+
+      design and development by
+
+       __                   _   __ _     _ _     __       _         
+      / _\_      _____  ___| |_/ _\ |__ (_) |_  / /  __ _| |__  ___ 
+      \ \\ \ /\ / / _ \/ _ \ __\ \| '_ \| | __|/ /  / _` | '_ \/ __|
+      _\ \\ V  V /  __/  __/ |__\ \ | | | | |_/ /__| (_| | |_) \__ \
+      \__/ \_/\_/ \___|\___|\__\__/_| |_|_|\__\____/\__,_|_.__/|___/                                                           
+
+      written in python and django 1.4 <3
+      made pretty by @ReptarAzar
+      
+      
+-->      
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We scale meaningful experiences.">
+    <meta name="author" content="Christopher Azar for Little Tinker">
+
+
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/responsive.css">
+    <script src="{{ STATIC_URL }}js/libs/modernizr-2.5.3.min.js"></script>
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ STATIC_URL }}apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}apple-touch-icon-57-precomposed.png">
+
+    {% block head %}
+    {% endblock %}
+
+  </head>
+
+  <body>
+  <div class="modal" id="contact">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h3>What's up?</h3>
+      </div>
+      <div class="modal-body">
+
+
+
+
+          <!-- Begin Form -->
+          <form id="emf-form" enctype="multipart/form-data" method="post" action="/contact/" name="emf-form">
+              {% csrf_token %}
+              <input class="dark" onfocus="this.value=''" id="element_0" name="name" value="Name" size="80" class="validate[required]" type="text" />
+              <input class="dark" onfocus="this.value=''" id="element_1" name="email" value="Email" size="80" class="validate[required]" type="text" />
+              <textarea class="dark" onfocus="this.value=''" id="element_2" name="message" cols="80" rows="6" class="validate[required]">Message</textarea>
+              <input name="element_counts" value="3" type="hidden" />
+              <input name="embed" value="forms" type="hidden" />
+
+
+              <p> 235 Harrison Street Syracuse, NY 13210  <span class="pull-right"> (415) 484-6537</span></p>
+      </div>
+      <div class="modal-footer">
+          <a href="http://twitter.com/littletinkerco" target="_blank" class="tip twit pull-left"><img src="{{ STATIC_URL }}img/ico/twitter-2.png" width="16" height="16" alt="Twitter"><span>Twitter</span></a>
+
+          <a href="https://foursquare.com/littletinkerco" target="_blank" class="tip fsq pull-left"><img src="{{ STATIC_URL }}img/ico/4sq.png" width="16" height="16" alt="4sq"><span>Foursquare</span></a>
+
+          <a href="https://www.facebook.com/LittleTinkerCo" target="_blank" class="tip fb pull-left"><img src="{{ STATIC_URL }}img/ico/facebook.png" width="16" height="16" alt="Facebook"><span>Facebook</span></a>
+
+          <a href="mailto:info@littletinker.co" target="_blank" class="tip email pull-left"><img src="{{ STATIC_URL }}img/ico/email.png" width="16" height="16" alt="Email"><span>info@littletinker.co</span></a>
+
+          <input  type="reset" value="Reset" class="reset btn" />
+          <input  type="submit" value="Send" class="submit btn btn-inverse" />
+          </form>
+          <!-- End Form -->
+      </div>
+  </div>
+
+  <!-- Le javascript
+ ================================================== -->
+    <!-- Placed at le end  of le the document so le pages load faster -->
+    <script src="{{ STATIC_URL }}js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ STATIC_URL }}js/script.js"></script>
+    <script src="{{ STATIC_URL }}js/plugins.js"></script>
+
+    {% block bottom_scripts %}
+    {% endblock %}
+
+<!-- Analytics for LittleTinker.co -->
+    <script>
+        var _gaq=[['_setAccount','UA-28931578-2'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+
+
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

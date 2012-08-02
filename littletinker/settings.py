@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'web',
     'south',
+    'django.contrib.sitemaps',
 )
 
 LOGGING = {

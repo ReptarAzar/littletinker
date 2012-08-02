@@ -29,4 +29,4 @@ def contact_us(request):
         send_mail('New #TinkerMessage from ' + request.POST['name'], request.POST['message'], request.POST['email'], ['info@littletinker.co'], fail_silently=False)
         return HttpResponseRedirect("/")
     else:
-        return HttpResponse("500")
+        return render_to_response('contact.html',locals(),context_instance=RequestContext(request))
