@@ -5,7 +5,7 @@ from django.template.context import RequestContext
 from web.models import Project, ProjectImage
 
 def home(request):
-    return render_to_response('instatinker.html',locals(),context_instance=RequestContext(request))
+    return render_to_response('index.html',locals(),context_instance=RequestContext(request))
 
 def about(request, perm = None):
     permalink = perm
