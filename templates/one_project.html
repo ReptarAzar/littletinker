@@ -24,7 +24,7 @@
     <div id="project-sidebar" class="row-fluid span4">
           {% if project.url %}
            <h4 class="">Site</h4> 
-           <h3><a href="#" target="_blank">{{ project.url }}</a></h3>
+           <h3><a href="{{ project.url }}" target="_blank">{{ urlPretty }}</a></h3>
            {% endif %}
            <h4 class="">Date</h4> 
            <h3 class="project-date">{{ project.date|date:"F" }}<span>{{ project.date|date:"Y" }}</span></h3>
@@ -33,7 +33,7 @@
             {% for category in project.category.all %}
               <a href="" title="{{ category.name }}" target="_blank"><img src="{{ MEDIA_URL }}{{ category.image }}" title="" alt="" /></a>
             {% endfor %}
-           </span></h3>
+           </h3>
          </div>
     <div class="row-fluid span8"> 
             <h1>{{ project.title }}</h1> 

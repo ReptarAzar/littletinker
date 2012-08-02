@@ -15,6 +15,7 @@ def hacks(request, perm = None):
 
 def one_project(request, id):
     project = Project.objects.get(id=id)
+    urlPretty = project.url[7:-1]
     images = ProjectImage.objects.filter(projectId = id)
     return render_to_response('one_project.html',locals(),context_instance=RequestContext(request))
 
