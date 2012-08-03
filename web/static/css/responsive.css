@@ -184,24 +184,24 @@
     margin-left: 10px;
   }
   .col4 {
-    width:240px !important;
+    width:200px !important;
     text-align: center;
   }
   .col2 {
-    width:240px !important;
+    width:200px !important;
     text-align: center;
 
   }
   .col2 img {
-    max-width: 240px !important;
-    width:  240px !important;
+    max-width: 200px !important;
+    width:  200px !important;
 }
 #projects-description {
   width: 100%;
   float:left;
 }
 .col2.head.pull-right {
-  width:240px !important;  
+  width:200px !important;  
   float: left;
 }
 .span12 {
