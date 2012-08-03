@@ -183,7 +183,9 @@ a.inactive {
 img.process {
   opacity: .25;
 }
-
+img.process:hover {
+  opacity: 1;
+}
 .span7 h2 {
   padding-bottom: 10px;
 }
