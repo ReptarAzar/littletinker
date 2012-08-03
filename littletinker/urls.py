@@ -64,9 +64,11 @@ urlpatterns = patterns('web.views',
     url(r'^admin/', include(admin.site.urls)),
 )
 
-# le sitemap
+# le sitemap, le robots.txt, and le humans.txt
 urlpatterns += patterns('',
-    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps})
+    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+    (r'^robots\.txt$', direct_to_template, {'template': 'robots.txt', 'mimetype': 'text/plain'}),
+    (r'^humans\.txt$', direct_to_template, {'template': 'humans.txt', 'mimetype': 'text/plain'}),
 )
 
 if settings.DEBUG and settings.DEPLOYED is False:
