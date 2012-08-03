@@ -181,7 +181,7 @@ a.inactive {
   text-decoration: none;
 }
 img.process {
-  opacity: .25;
+  opacity: 1;
 }
 img.process:hover {
   opacity: 1;
