@@ -401,6 +401,7 @@ div.col2.head {
 
 .col1 img { max-width: 90px; }
 .col2 img { max-width: 190px; }
+.col2.head img { max-width: 180px; }
 .col3 img { max-width: 290px; }
 .col4 img { max-width: 390px; }
 .col5 img { max-width: 490px; }
