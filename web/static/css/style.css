@@ -5,7 +5,6 @@
 
 body {
   padding-top: 125px;
-  padding-bottom: 40px;
   background: #f6f6f6 url(../img/bg.png) repeat;
 }
 .sidebar-nav {
@@ -259,17 +258,59 @@ footer {
   font-family: "TisaOT-Bold",sans-serif;
 }
 footer a {
-  margin-right: 5px;
-  margin-bottom: 25px;
 }
 footer img {
-  margin: -3px -3px 0 8px;
+  margin: -3px 5px 0 0;
 }
 footer span {
   color: #ddd;
-  line-height: 2.5em;
+  line-height: 2.5em; 
+}
+footer {
+  background-color: #262626;
+  background-color:rgba(38, 38, 38, 0.96);
+  width: 100%;
+  color: #eee;
+  position: relative;
+  height: auto;
+  min-height: 240px;
+   -moz-box-shadow:inset 0 25px 120px -20px rgba(0, 0, 0, 0.9);
+   -webkit-box-shadow: inset 0 25px 120px -20px rgba(0, 0, 0, 0.9);
+   box-shadow: inset 0 25px 120px -20px rgba(0, 0, 0, 0.9);
+   border-top: 1px #f6f6f6 solid;
+   padding-bottom: 20px;
+}
+footer a:link, footer a:visited {
+  color: #eee;
+  line-height: .75em;
 }
 
+footer a:hover {
+  color: #f6f6f6;
+}
+footer .left-footer a:link, footer .left-footer a:visited  {
+  line-height: 1.5em;
+}
+footer div.span4, footer div.span3, footer div.span5 {
+  border-top: 1px rgba(58, 58, 58, 0.15) solid;
+  padding-top: 10px;
+  top: 15px;
+  position: relative;
+}
+footer h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+footer .left-footer p {
+  color: #444;
+}
+footer .span5 .btn {
+  color: #222;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
 a.btn img {
   position: relative;
   top: -2px;
