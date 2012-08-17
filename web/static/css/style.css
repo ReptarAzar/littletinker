@@ -799,5 +799,9 @@ a.instaframe:hover {
     padding: 9px;
 }
 
-
+#blog img {
+  padding: 5px;
+  border: 1px #aaa solid;
+  background-color: #fff;
+}
 
