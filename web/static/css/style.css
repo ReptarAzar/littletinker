@@ -804,4 +804,10 @@ a.instaframe:hover {
   border: 1px #aaa solid;
   background-color: #fff;
 }
+#blog h3 a{
+  margin-top: 15px;
+}
+#blog ul {
+  list-style: none;
+}
 
