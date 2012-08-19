@@ -220,10 +220,13 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-.container-fluid {
+.container-fluid, footer {
   overflow-x: hidden;
   padding-left: 0;
   padding-right: 20px;
+}
+footer .row-fluid {
+  width: 50%;
 }
 .navbar-fixed-top {
   margin-left: -20px;

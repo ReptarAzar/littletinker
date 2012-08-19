@@ -256,6 +256,8 @@ iframe {
 footer {
   line-height: 2em;
   font-family: "TisaOT-Bold",sans-serif;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 footer a {
 }
