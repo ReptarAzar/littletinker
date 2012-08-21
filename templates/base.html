@@ -9,8 +9,8 @@
       _\ \\ V  V /  __/  __/ |__\ \ | | | | |_/ /__| (_| | |_) \__ \
       \__/ \_/\_/ \___|\___|\__\__/_| |_|_|\__\____/\__,_|_.__/|___/                                                           
 
-      written in python and django 1.4 <3
-      made pretty by @ReptarAzar
+      frontend javascript/html/css wizardry by @ReptarAzar
+      backend shenanigans by @Cbeck527
       
       
 -->      
@@ -37,7 +37,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ STATIC_URL }}apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}apple-touch-icon-57-precomposed.png">
@@ -75,12 +75,6 @@
       {% block main %}
       {% endblock %}
       
-      <footer>
-        <div class="span12 row-fluid">
-          <hr>
-          <p>Little Tinker &copy; 2012 &nbsp;&nbsp;<span>|</span> <a href="mailto:info@littletinker.co" target="_blank"><img src="{{ STATIC_URL }}img/ico/email.png" width="16" height="16" alt="Email"></a> <a href="mailto:info@littletinker.co" target="_blank" class="contact-label">Email</a> <span>|</span> <a href="http://twitter.com/littletinkerco" target="_blank"><img src="{{ STATIC_URL }}img/ico/twitter-2.png" width="16" height="16" alt="Twitter"></a> <a href="http://twitter.com/littletinkerco" target="_blank" class="contact-label">Twitter</a><span>|</span> <a href="http://www.facebook.com/littletinkerco" target="_blank"><img src="{{ STATIC_URL }}img/ico/facebook.png" width="16" height="16" alt="Facebook"></a> <a href="http://www.facebook.com/littletinkerco" target="_blank" class="contact-label">Facebook</a><span>|</span> <a href="tel:4154846537"><img src="{{ STATIC_URL }}img/ico/phone.png" width="16" height="16" alt="phone"></a>&nbsp;&nbsp;<a href="tel:4154846537" class="contact-label">(415) 484-6537</a></p>
-          <a href="http://www.w3.org/html/logo/" target="_blank"><img class="pull-right html5-badge" src="{{ STATIC_URL }}img/html5-badge.png" width="165" height="64" alt="Html5 Badge"></a></div><!--/span-->
-      </footer>
     </div><!--/row-->      
     </div><!--/.fluid-container-->
 
@@ -121,6 +115,41 @@
        <!-- End Form -->    
   </div>
 </div> 
+
+      <footer>
+          <div class="row-fluid">
+          <div class="span3 left-footer">
+             <h3><a href="projects/">Projects</a></h3>
+             <h3><a href="about/">About</a></h3>
+             <h3><a href="http://makesweetshit.com/">Blog</a></h3>
+             <h3><a href="http://store.littletinker.co/">Store</a></h3>
+             <p>Little Tinker &copy; 2012</p>
+            </div><!--/span-->
+
+          <div class="span3">
+             <h3 class="contact-us">Contact us</h3>
+              
+             <p><img src="{{ STATIC_URL }}img/ico/phone.png" width="16" height="16" alt="phone">&nbsp;&nbsp;<a href="tel:4154846537">(415) 484-6537</a></p>
+
+             <p><a href="mailto:info@littletinker.co" target="_blank"><img src="{{ STATIC_URL }}img/ico/email.png" width="16" height="16" alt="Email"></a> <a href="mailto:info@littletinker.co" target="_blank">info@littletinker.co</a> </p>
+
+             <p><a href="http://twitter.com/littletinkerco" target="_blank"><img src="{{ STATIC_URL }}img/ico/twitter-2.png" width="16" height="16" alt="Twitter"></a> <a href="http://twitter.com/littletinkerco" target="_blank">@LittleTinkerCo</a> </p>
+         
+             <p><a href="http://www.facebook.com/littletinkerco" target="_blank"><img src="{{ STATIC_URL }}img/ico/facebook.png" width="16" height="16" alt="Facebook"></a> <a href="http://www.facebook.com/littletinkerco" target="_blank">/LittleTinkerCo</a> 
+             </p>
+            
+             <p><a href="http://littletinker.co/instatinker" target="_blank"><img src="{{ STATIC_URL }}img/ico/4sq.png" width="16" height="16" alt="Instagram"></a> <a href="https://foursquare.com/littletinkerco" target="_blank">Foursquare</a>  </p>            
+            </div><!--/span-->
+        
+         <div class="span5">
+             <h3>Tinker Town Newsletter</h3>
+             <p> Get weekly Little Tinker updates sent right to your inbox</p>
+             <p><a href="http://eepurl.com/nYCf9" class="btn btn-action btn-large docuready">Subscribe!</a></p>
+            </div><!--/span-->
+
+          </div><!--/row-->
+        </footer>
+
 
     <!-- Le javascript
     ================================================== -->
