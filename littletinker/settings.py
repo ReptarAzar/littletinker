@@ -10,6 +10,10 @@ ADMINS = (
     ('Chris Becker', 'becker@littletinker.co'),
 )
 
+RECAPTCHA_PUBLIC_KEY = "6Ldvh9USAAAAAFUUwbiGjfzEcUdYCJBM05xzJ4WG"
+
+RECAPTCHA_PRIVATE_KEY = "6Ldvh9USAAAAAN5cb4AcO0--Oy7AIjIKkUHlC4pA"
+
 MANAGERS = ADMINS
 
 DATABASES = {
@@ -128,6 +132,7 @@ INSTALLED_APPS = (
     'south',
     'django.contrib.sitemaps',
     'django.contrib.flatpages',
+    'captcha',
 )
 
 LOGGING = {

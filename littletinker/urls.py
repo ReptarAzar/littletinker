@@ -52,7 +52,7 @@ sitemaps = {
 }
 
 urlpatterns = patterns('web.views',
-    url(r'^$', direct_to_template, {'template':'index.html'}),
+    url(r'^$', 'home'),
     url(r'^about/$', direct_to_template, {'template':'about.html'}),
     url(r'^about/(.+)/$', 'about'),
     url(r'^projects/$', direct_to_template, {'template':'projects.html'}),
