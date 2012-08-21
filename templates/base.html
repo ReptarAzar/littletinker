@@ -90,12 +90,12 @@
 
       <!-- Begin Form -->
       <form id="emf-form" enctype="multipart/form-data" method="post" action="/contact/" name="emf-form">
-        {% csrf_token %}
-              <input class="dark" onfocus="this.value=''" id="element_0" name="name" value="Name" size="80" class="validate[required]" type="text" />
-              <input class="dark" onfocus="this.value=''" id="element_1" name="email" value="Email" size="80" class="validate[required]" type="text" />
-              <textarea class="dark" onfocus="this.value=''" id="element_2" name="message" cols="80" rows="6" class="validate[required]">Message</textarea>
-              <input name="element_counts" value="3" type="hidden" /> 
-          <input name="embed" value="forms" type="hidden" />
+        {% csrf_token %}              
+        {% for field in form %}
+        {{ field }}
+        {% endfor %}
+        <input name="element_counts" value="3" type="hidden" />
+        <input name="embed" value="forms" type="hidden" />
 
 
 <p> 235 Harrison Street Syracuse, NY 13210  <span class="pull-right"> (415) 484-6537</span></p> 

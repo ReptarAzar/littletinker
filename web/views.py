@@ -7,7 +7,7 @@ from web.forms import ContactForm
 
 
 def home(request):
-    form = ContactForm()
+    form = ContactForm(initial={'message': 'Message'})
     return render_to_response('index.html', locals(), context_instance=RequestContext(request))
 
 
