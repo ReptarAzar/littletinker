@@ -4,4 +4,4 @@
 local_settings.py
 .idea/
 .idea/*
-.DS*
+.DS_Store
