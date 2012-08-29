@@ -12,16 +12,19 @@ def home(request):
 
 
 def about(request, perm=None):
+    form = ContactForm(initial={'message': 'Message'})
     permalink = perm
     return render_to_response('about.html', locals(), context_instance=RequestContext(request))
 
 
 def hacks(request, perm=None):
+    form = ContactForm(initial={'message': 'Message'})
     permalink = perm
     return render_to_response('hacks.html', locals(), context_instance=RequestContext(request))
 
 
 def one_project(request, id):
+    form = ContactForm(initial={'message': 'Message'})
     project = Project.objects.get(id=id)
     urlPretty = project.url[7:-1]
     images = ProjectImage.objects.filter(projectId=id)

@@ -5,6 +5,7 @@ from littletinker import settings
 from web.models import Project
 from django.contrib.sitemaps import Sitemap, GenericSitemap
 from django.contrib.flatpages.models import FlatPage
+from web.forms import ContactForm
 
 admin.autodiscover()
 
@@ -53,11 +54,11 @@ sitemaps = {
 
 urlpatterns = patterns('web.views',
     url(r'^$', 'home'),
-    url(r'^about/$', direct_to_template, {'template':'about.html'}),
+    url(r'^about/$', direct_to_template, {'template':'about.html', 'extra_context': {'form': ContactForm(initial={'message': 'Message'})}}),
     url(r'^about/(.+)/$', 'about'),
-    url(r'^projects/$', direct_to_template, {'template':'projects.html'}),
+    url(r'^projects/$', direct_to_template, {'template':'projects.html', 'extra_context': {'form': ContactForm(initial={'message': 'Message'})}}),
     url(r'^project/(\d+)$', 'one_project'),
-    url(r'^jobs/$', direct_to_template, {'template': 'jobs.html'}),
+    url(r'^jobs/$', direct_to_template, {'template': 'jobs.html', 'extra_context': {'form': ContactForm(initial={'message': 'Message'})}}),
     url(r'^contact/', 'contact_us'),
 
     # Uncomment the next line to enable the admin:
